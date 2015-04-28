@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC55177F1AEDB948001E1A7C /* DetalleEspecialidadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55177E1AEDB948001E1A7C /* DetalleEspecialidadViewController.m */; };
 		FCE610351ADB7BC300F1E707 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE610341ADB7BC300F1E707 /* main.m */; };
 		FCE610381ADB7BC300F1E707 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE610371ADB7BC300F1E707 /* AppDelegate.m */; };
 		FCE6103B1ADB7BC300F1E707 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE6103A1ADB7BC300F1E707 /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		FCE610401ADB7BC300F1E707 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE6103F1ADB7BC300F1E707 /* Images.xcassets */; };
 		FCE610431ADB7BC300F1E707 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE610411ADB7BC300F1E707 /* LaunchScreen.xib */; };
 		FCE6104F1ADB7BC400F1E707 /* Mi_DoctorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE6104E1ADB7BC400F1E707 /* Mi_DoctorTests.m */; };
+		FCE6105A1ADCD21D00F1E707 /* EspecialidadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE610591ADCD21D00F1E707 /* EspecialidadesViewController.m */; };
+		FCE6105D1ADCD2AE00F1E707 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE6105C1ADCD2AE00F1E707 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC55177D1AEDB948001E1A7C /* DetalleEspecialidadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleEspecialidadViewController.h; sourceTree = "<group>"; };
+		FC55177E1AEDB948001E1A7C /* DetalleEspecialidadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleEspecialidadViewController.m; sourceTree = "<group>"; };
 		FCE6102F1ADB7BC300F1E707 /* Mi Doctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi Doctor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE610331ADB7BC300F1E707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCE610341ADB7BC300F1E707 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,10 @@
 		FCE610481ADB7BC400F1E707 /* Mi DoctorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mi DoctorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE6104D1ADB7BC400F1E707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCE6104E1ADB7BC400F1E707 /* Mi_DoctorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mi_DoctorTests.m; sourceTree = "<group>"; };
+		FCE610581ADCD21D00F1E707 /* EspecialidadesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EspecialidadesViewController.h; sourceTree = "<group>"; };
+		FCE610591ADCD21D00F1E707 /* EspecialidadesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EspecialidadesViewController.m; sourceTree = "<group>"; };
+		FCE6105B1ADCD2AE00F1E707 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		FCE6105C1ADCD2AE00F1E707 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,12 @@
 				FCE6103F1ADB7BC300F1E707 /* Images.xcassets */,
 				FCE610411ADB7BC300F1E707 /* LaunchScreen.xib */,
 				FCE610321ADB7BC300F1E707 /* Supporting Files */,
+				FCE610581ADCD21D00F1E707 /* EspecialidadesViewController.h */,
+				FCE610591ADCD21D00F1E707 /* EspecialidadesViewController.m */,
+				FC55177D1AEDB948001E1A7C /* DetalleEspecialidadViewController.h */,
+				FC55177E1AEDB948001E1A7C /* DetalleEspecialidadViewController.m */,
+				FCE6105B1ADCD2AE00F1E707 /* TableViewController.h */,
+				FCE6105C1ADCD2AE00F1E707 /* TableViewController.m */,
 			);
 			path = "Mi Doctor";
 			sourceTree = "<group>";
@@ -219,8 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE6105A1ADCD21D00F1E707 /* EspecialidadesViewController.m in Sources */,
 				FCE6103B1ADB7BC300F1E707 /* ViewController.m in Sources */,
 				FCE610381ADB7BC300F1E707 /* AppDelegate.m in Sources */,
+				FCE6105D1ADCD2AE00F1E707 /* TableViewController.m in Sources */,
+				FC55177F1AEDB948001E1A7C /* DetalleEspecialidadViewController.m in Sources */,
 				FCE610351ADB7BC300F1E707 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +434,7 @@
 				FCE610541ADB7BC400F1E707 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCE610551ADB7BC400F1E707 /* Build configuration list for PBXNativeTarget "Mi DoctorTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +443,7 @@
 				FCE610571ADB7BC400F1E707 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    self._pickerData = @[@"Selecciona tu ciudad:", @"Item 2", @"Item 3", @"Item 4", @"Item 5", @"Item 6"];
+    self._pickerData = @[@"Selecciona tu ciudad:", @"Cancún", @"Playa del Carmen", @"Chetumal", @"Mérida"];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -41,6 +41,21 @@
 - (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     return self._pickerData[row];
+}
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+  
+    if([self._pickerData[row] isEqualToString:@"Selecciona tu ciudad:"]){
+        
+    }
+    else if ([self._pickerData[row] isEqualToString:@"Cancún"]){
+        ViewController *viewC = [self.storyboard instantiateViewControllerWithIdentifier:@"CategoryView"];
+        [self.navigationController pushViewController:viewC animated:YES];
+    }
+    else{
+    ViewController *viewC = [self.storyboard instantiateViewControllerWithIdentifier:@"CommingSoonView"];
+        [self.navigationController pushViewController:viewC animated:YES];
+    }
 }
 
 @end
