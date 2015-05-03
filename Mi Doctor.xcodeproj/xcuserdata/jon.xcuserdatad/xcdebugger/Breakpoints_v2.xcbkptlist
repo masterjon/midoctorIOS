@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Mi Doctor/EspecialidadesViewController.m"
-            timestampString = "451888148.255445"
+            timestampString = "452310633.12469"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,13 +26,77 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Mi Doctor/EspecialidadesViewController.m"
-            timestampString = "451888148.255445"
+            timestampString = "452310633.12469"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mi Doctor/EspecialidadesPediatricasViewController.m"
+            timestampString = "452297117.558489"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mi Doctor/DetalleEspecialidadPediatricaViewController.h"
+            timestampString = "452306514.508053"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "itemDescription"
+            landmarkType = "19">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DetalleEspecialidadPediatricaViewController doctorsArray]"
+                  moduleName = "Mi Doctor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jon/XcodeProjects/Mi%20Doctor/Mi%20Doctor/DetalleEspecialidadPediatricaViewController.h"
+                  timestampString = "452305450.991214"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DetalleEspecialidadPediatricaViewController setDoctorsArray:]"
+                  moduleName = "Mi Doctor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jon/XcodeProjects/Mi%20Doctor/Mi%20Doctor/DetalleEspecialidadPediatricaViewController.h"
+                  timestampString = "452305450.991526"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

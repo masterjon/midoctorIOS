@@ -1,43 +1,41 @@
 //
-//  DetalleEspecialidadViewController.m
+//  DetalleEspecialidadPediatricaViewController.m
 //  Mi Doctor
 //
-//  Created by Jonathan Horta on 4/26/15.
+//  Created by Jonathan Horta on 5/2/15.
 //  Copyright (c) 2015 Iddeas Design. All rights reserved.
 //
 
-#import "DetalleEspecialidadViewController.h"
+#import "DetalleEspecialidadPediatricaViewController.h"
 #import "DetalleDoctorViewController.h"
 #import "MapViewController.h"
-@interface DetalleEspecialidadViewController ()
+@interface DetalleEspecialidadPediatricaViewController ()
 
 @end
 
-@implementation DetalleEspecialidadViewController
+@implementation DetalleEspecialidadPediatricaViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UILabel *viewTitle = [[UILabel alloc] init];
-    viewTitle.textColor = [UIColor whiteColor];
-    viewTitle.text=self.itemTitle;
-    
-    
-    self.navigationItem.titleView=viewTitle;
-    [viewTitle sizeToFit];
+    [self.textInfo setText:self.itemDescription];
+    if ([self.speciality isEqualToString:@"Pediatra"]) {
+        [self.headerImage setImage:[UIImage imageNamed:@"header_peidatra"]];
+    }
+    else if ([self.speciality isEqualToString:@"Neonatólogo"]){
+        [self.headerImage setImage:[UIImage imageNamed:@"header_neonatologo"]];
+    }
+    else if ([self.speciality isEqualToString:@"Reumatólogo"]){
+        [self.headerImage setImage:[UIImage imageNamed:@"header_reumatologo"]];
+    }
+    else if ([self.speciality isEqualToString:@"Odontopediatra"]){
+        [self.headerImage setImage:[UIImage imageNamed:@"header_odontologo"]];
+    }
+    else if ([self.speciality isEqualToString:@"Alergólogo"]){
+        [self.headerImage setImage:[UIImage imageNamed:@"header_alergologo"]];
+    }
 
-    [self.titleView setText:self.itemTitle];
-    [self.textView setText:self.itemDescription];
-    [self.imageView setImage:[UIImage imageNamed:self.itemImageName]];
-    
-    [self.textView.layer setCornerRadius:10];
-    self.textView.clipsToBounds=YES;
 
     // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
@@ -111,11 +109,17 @@
         placemark.title = itemdictionary[@"name"];
         View.pinpoint = placemark;
         //agregamos marcadores en cada punto
-
+        
         
     }
     
 }
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 /*
 #pragma mark - Navigation
 
@@ -143,6 +147,4 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"mailto:%@",itemdictionary[@"email"]]]];
 }
 
-- (IBAction)locationButton:(id)sender {
-}
 @end

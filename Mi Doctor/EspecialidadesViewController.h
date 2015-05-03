@@ -11,5 +11,7 @@
 @interface EspecialidadesViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *myTable;
 @property (strong, nonatomic) IBOutlet NSMutableArray *TableData;
+@property (weak, nonatomic) IBOutlet UIButton *pediatraButton;
+
 
 @end

@@ -17,13 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self.pediatraButton.layer setCornerRadius:10];
+    self.pediatraButton.clipsToBounds=YES;
     self.TableData = [[NSMutableArray alloc] initWithObjects:
-                      @{
-                        @"title":@"Pediatra",
-                        @"image":@"",
-                        @"description":@""
-                       },
+
                       @{
                         @"title":@"Alergólogo",
                         @"image":@"mascota_alergologo",
@@ -32,12 +29,24 @@
                                 @{
                                     @"name":@"Dr. Francisco Navarrete Suárez",
                                     @"speciality":@"Alergólogo",
-                                    @"logo":@"logo_navarrete"
+                                    @"logo":@"logo_navarrete",
+                                    @"image":@"logo_navarrete_big",
+                                    @"phone":@"8981927",
+                                    @"email":@"alergiadecancun@yahoo.com.mx",
+                                    @"map_coord":@"21.13655,-86.827488",
+                                    @"address":@"Av. Tulum Lote 1 mza 1 consultorio 203  SM 12 Hospital Galenia. CP 77505",
+                                    @"services":@"Servicios: Pacientes con alergias, pruebas de alergia, espirometrias, vacunas para alergia y vacunas complementarias de la cartilla de vacunacion."
                                 },
                                 @{
                                     @"name":@"Dra. Aurora Meza Morales",
                                     @"speciality":@"Alergólogo",
-                                    @"logo":@"logo_aurora"
+                                    @"logo":@"logo_aurora",
+                                    @"image":@"logo_aurora_big",
+                                    @"phone":@"8981927",
+                                    @"email":@"alergiaypediatria@yahoo.com.mx",
+                                    @"map_coord":@"21.13655,-86.827488",
+                                    @"address":@"Av. Tulum lote 1 mza 1 consultorio 203 SM 12  Hospital Galenia. CP 77505",
+                                    @"services":@""
                                 },
                             ]
                       },
@@ -74,7 +83,13 @@
                                 @{
                                     @"name":@"Dr. Raúl Barragán Parrao",
                                     @"speciality":@"Gastroenterólogo",
-                                    @"logo":@"logo_raul"
+                                    @"logo":@"logo_raul",
+                                    @"image":@"logo_raul_big",
+                                    @"phone":@"998 8980801",
+                                    @"email":@"raulbapa@hotmail.com",
+                                    @"map_coord":@"21.13655,-86.827488",
+                                    @"address":@"Av Tulum Lote 1 mza 1  consultorio  315      SM 12 Hospital Galenia CP. 77505",
+                                    @"services":@""
                                     }
                                 ]
                       },
@@ -121,7 +136,13 @@
                                 @{
                                     @"name":@"Dra. Mónica Callejo",
                                     @"speciality":@"Cirujana Dentista",
-                                    @"logo":@"logo_monica_callejo"
+                                    @"logo":@"logo_monica_callejo",
+                                    @"image":@"logo_monica_callejo_big",
+                                    @"phone":@"",
+                                    @"email":@"monica_callejo@hotmail.com",
+                                    @"map_coord":@"21.136610,86.827509",
+                                    @"address":@"Hospital Galenia consultorio 203-2 Av. tulum  mz 01 lote 01 SM 12 Cancún, Quintana Roo. CP. 77505",
+                                    @"services":@"ODONTOLOGIA ESTETICA Y PREVENTIVA \n FACULTAD DE ODONTOLOGIA UNAM \n CEDULA PROFESIONAL 2163854 \n CERTIFICADA ADM E.C-0403-01/1 \n *odontologia preventiva \n *odontologia estetica \n *implantes dentales \n *emergencias dentales \n twitter @CdMonica \n facebook: Dra. Monica Callejo Mi dentista Cancun"
                                     }
                                 ]
                         },
@@ -208,16 +229,20 @@
     return cell;
 }
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    DetalleEspecialidadViewController *View = [[DetalleEspecialidadViewController alloc] init];
-    View = [segue destinationViewController];
-    NSArray *arrayOfIndexPaths = [self.myTable  indexPathsForSelectedRows];
-    NSIndexPath *path = [arrayOfIndexPaths firstObject];
-    NSDictionary *itemdictionary = [self.TableData objectAtIndex:path.row];
+    if ([segue.identifier isEqualToString:@"doctorSegue"]) {
+        DetalleEspecialidadViewController *View = [[DetalleEspecialidadViewController alloc] init];
+        View = [segue destinationViewController];
+        NSArray *arrayOfIndexPaths = [self.myTable  indexPathsForSelectedRows];
+        NSIndexPath *path = [arrayOfIndexPaths firstObject];
+        NSDictionary *itemdictionary = [self.TableData objectAtIndex:path.row];
 
-    View.itemTitle=itemdictionary[@"title"];
-    View.itemImageName=itemdictionary[@"image"];
-    View.itemDescription=itemdictionary[@"description"];
-    View.doctorsArray=itemdictionary[@"doctors"];
+        View.itemTitle=itemdictionary[@"title"];
+        View.itemImageName=itemdictionary[@"image"];
+        View.itemDescription=itemdictionary[@"description"];
+        View.doctorsArray=itemdictionary[@"doctors"];
+    }
+    else if ([segue.identifier isEqualToString:@"pediatraSegue"]){
+    }
 }
 /*
 #pragma mark - Navigation
@@ -228,5 +253,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

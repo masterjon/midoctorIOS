@@ -17,4 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UITableView *doctorsTable;
 @property (weak,nonatomic)  NSMutableArray *doctorsArray;
+- (IBAction)callButton:(id)sender;
+- (IBAction)emailButton:(id)sender;
+- (IBAction)locationButton:(id)sender;
 @end

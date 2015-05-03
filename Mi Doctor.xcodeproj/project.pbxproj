@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC3EC56A1AF571330000CDC5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC5691AF571330000CDC5 /* MapViewController.m */; };
+		FC3EC56C1AF5718E0000CDC5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3EC56B1AF5718E0000CDC5 /* MapKit.framework */; };
+		FC3EC56F1AF57D0B0000CDC5 /* EspecialidadesPediatricasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC56E1AF57D0B0000CDC5 /* EspecialidadesPediatricasViewController.m */; };
+		FC3EC5721AF59B8A0000CDC5 /* DetalleEspecialidadPediatricaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC5711AF59B8A0000CDC5 /* DetalleEspecialidadPediatricaViewController.m */; };
 		FC55177F1AEDB948001E1A7C /* DetalleEspecialidadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55177E1AEDB948001E1A7C /* DetalleEspecialidadViewController.m */; };
+		FCD03CD11AF0931400B24346 /* DetalleDoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD03CD01AF0931400B24346 /* DetalleDoctorViewController.m */; };
 		FCE610351ADB7BC300F1E707 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE610341ADB7BC300F1E707 /* main.m */; };
 		FCE610381ADB7BC300F1E707 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE610371ADB7BC300F1E707 /* AppDelegate.m */; };
 		FCE6103B1ADB7BC300F1E707 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE6103A1ADB7BC300F1E707 /* ViewController.m */; };
@@ -16,7 +21,6 @@
 		FCE610431ADB7BC300F1E707 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE610411ADB7BC300F1E707 /* LaunchScreen.xib */; };
 		FCE6104F1ADB7BC400F1E707 /* Mi_DoctorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE6104E1ADB7BC400F1E707 /* Mi_DoctorTests.m */; };
 		FCE6105A1ADCD21D00F1E707 /* EspecialidadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE610591ADCD21D00F1E707 /* EspecialidadesViewController.m */; };
-		FCE6105D1ADCD2AE00F1E707 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE6105C1ADCD2AE00F1E707 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +34,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC3EC5681AF571330000CDC5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		FC3EC5691AF571330000CDC5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		FC3EC56B1AF5718E0000CDC5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FC3EC56D1AF57D0B0000CDC5 /* EspecialidadesPediatricasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EspecialidadesPediatricasViewController.h; sourceTree = "<group>"; };
+		FC3EC56E1AF57D0B0000CDC5 /* EspecialidadesPediatricasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EspecialidadesPediatricasViewController.m; sourceTree = "<group>"; };
+		FC3EC5701AF59B890000CDC5 /* DetalleEspecialidadPediatricaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleEspecialidadPediatricaViewController.h; sourceTree = "<group>"; };
+		FC3EC5711AF59B8A0000CDC5 /* DetalleEspecialidadPediatricaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleEspecialidadPediatricaViewController.m; sourceTree = "<group>"; };
 		FC55177D1AEDB948001E1A7C /* DetalleEspecialidadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleEspecialidadViewController.h; sourceTree = "<group>"; };
 		FC55177E1AEDB948001E1A7C /* DetalleEspecialidadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleEspecialidadViewController.m; sourceTree = "<group>"; };
+		FCD03CCF1AF0931400B24346 /* DetalleDoctorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleDoctorViewController.h; sourceTree = "<group>"; };
+		FCD03CD01AF0931400B24346 /* DetalleDoctorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleDoctorViewController.m; sourceTree = "<group>"; };
 		FCE6102F1ADB7BC300F1E707 /* Mi Doctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi Doctor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE610331ADB7BC300F1E707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCE610341ADB7BC300F1E707 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,8 +60,6 @@
 		FCE6104E1ADB7BC400F1E707 /* Mi_DoctorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mi_DoctorTests.m; sourceTree = "<group>"; };
 		FCE610581ADCD21D00F1E707 /* EspecialidadesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EspecialidadesViewController.h; sourceTree = "<group>"; };
 		FCE610591ADCD21D00F1E707 /* EspecialidadesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EspecialidadesViewController.m; sourceTree = "<group>"; };
-		FCE6105B1ADCD2AE00F1E707 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		FCE6105C1ADCD2AE00F1E707 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3EC56C1AF5718E0000CDC5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +84,7 @@
 		FCE610261ADB7BC300F1E707 = {
 			isa = PBXGroup;
 			children = (
+				FC3EC56B1AF5718E0000CDC5 /* MapKit.framework */,
 				FCE610311ADB7BC300F1E707 /* Mi Doctor */,
 				FCE6104B1ADB7BC400F1E707 /* Mi DoctorTests */,
 				FCE610301ADB7BC300F1E707 /* Products */,
@@ -102,8 +115,14 @@
 				FCE610591ADCD21D00F1E707 /* EspecialidadesViewController.m */,
 				FC55177D1AEDB948001E1A7C /* DetalleEspecialidadViewController.h */,
 				FC55177E1AEDB948001E1A7C /* DetalleEspecialidadViewController.m */,
-				FCE6105B1ADCD2AE00F1E707 /* TableViewController.h */,
-				FCE6105C1ADCD2AE00F1E707 /* TableViewController.m */,
+				FCD03CCF1AF0931400B24346 /* DetalleDoctorViewController.h */,
+				FCD03CD01AF0931400B24346 /* DetalleDoctorViewController.m */,
+				FC3EC5681AF571330000CDC5 /* MapViewController.h */,
+				FC3EC5691AF571330000CDC5 /* MapViewController.m */,
+				FC3EC56D1AF57D0B0000CDC5 /* EspecialidadesPediatricasViewController.h */,
+				FC3EC56E1AF57D0B0000CDC5 /* EspecialidadesPediatricasViewController.m */,
+				FC3EC5701AF59B890000CDC5 /* DetalleEspecialidadPediatricaViewController.h */,
+				FC3EC5711AF59B8A0000CDC5 /* DetalleEspecialidadPediatricaViewController.m */,
 			);
 			path = "Mi Doctor";
 			sourceTree = "<group>";
@@ -183,6 +202,11 @@
 				TargetAttributes = {
 					FCE6102E1ADB7BC300F1E707 = {
 						CreatedOnToolsVersion = 6.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					FCE610471ADB7BC400F1E707 = {
 						CreatedOnToolsVersion = 6.2;
@@ -235,11 +259,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCE6105A1ADCD21D00F1E707 /* EspecialidadesViewController.m in Sources */,
+				FCD03CD11AF0931400B24346 /* DetalleDoctorViewController.m in Sources */,
+				FC3EC5721AF59B8A0000CDC5 /* DetalleEspecialidadPediatricaViewController.m in Sources */,
 				FCE6103B1ADB7BC300F1E707 /* ViewController.m in Sources */,
 				FCE610381ADB7BC300F1E707 /* AppDelegate.m in Sources */,
-				FCE6105D1ADCD2AE00F1E707 /* TableViewController.m in Sources */,
+				FC3EC56F1AF57D0B0000CDC5 /* EspecialidadesPediatricasViewController.m in Sources */,
 				FC55177F1AEDB948001E1A7C /* DetalleEspecialidadViewController.m in Sources */,
 				FCE610351ADB7BC300F1E707 /* main.m in Sources */,
+				FC3EC56A1AF571330000CDC5 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

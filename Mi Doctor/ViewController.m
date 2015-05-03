@@ -58,4 +58,26 @@
     }
 }
 
+- (IBAction)fbButton:(id)sender {
+    NSString *fbLink = @"fb://profile/765315823505858";
+    if (![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:fbLink]]) {
+        fbLink = @"https://www.facebook.com/MiDoctorDirectorio?fref=ts";
+    }
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:fbLink]];
+
+}
+
+- (IBAction)twButton:(id)sender {
+    NSString *twLink = @"twitter://user?screen_name=midoctor_";
+    
+    if (![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:twLink]]) {
+        twLink = @"https://twitter.com/midoctor_";
+        
+    }
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:twLink]];
+}
+
+- (IBAction)docotorizateButton:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.directoriomidoctor.com/doctorizate/"]];
+}
 @end

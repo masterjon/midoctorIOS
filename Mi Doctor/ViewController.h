@@ -12,6 +12,9 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 
 @property (strong, nonatomic) NSArray *_pickerData;
+- (IBAction)fbButton:(id)sender;
+- (IBAction)twButton:(id)sender;
+- (IBAction)docotorizateButton:(id)sender;
 
 @end
 
