@@ -17,16 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UILabel *viewTitle = [[UILabel alloc] init];
-    viewTitle.textColor = [UIColor whiteColor];
-    viewTitle.text=self.itemTitle;
-    
-    
-    self.navigationItem.titleView=viewTitle;
-    [viewTitle sizeToFit];
+//    UILabel *viewTitle = [[UILabel alloc] init];
+//    viewTitle.textColor = [UIColor blackColor];
+//    viewTitle.text=self.itemTitle;
+//    self.navigationItem.titleView=viewTitle;
+//    [viewTitle sizeToFit];
 
     [self.titleView setText:self.itemTitle];
     [self.textView setText:self.itemDescription];
+    [self.mylabel setText:self.label];
     [self.imageView setImage:[UIImage imageNamed:self.itemImageName]];
     
     [self.textView.layer setCornerRadius:10];
@@ -35,10 +34,6 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
@@ -144,5 +139,48 @@
 }
 
 - (IBAction)locationButton:(id)sender {
+}
+-(void) viewDidLayoutSubviews{
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    switch ((int) screenBounds.size.width) {
+        case 320:
+            NSLog(@"--5--");
+            //480
+            //568
+            if( (int) screenBounds.size.height <= 480){
+                self.bottomTextSpace.constant = 107;
+            }
+            else{
+                self.bottomTextSpace.constant = 190;
+            }
+            
+            break;
+        case 375:
+            NSLog(@"--6--");
+            self.bottomTextSpace.constant = 306;
+            break;
+        case 414:
+            NSLog(@"--6+--");
+            self.bottomTextSpace.constant = 360;
+            break;
+        case 768:
+            NSLog(@"--Ipad Portrait");
+            
+            break;
+        case 1024:
+            NSLog(@"--Ipad Landscape");
+            
+            break;
+        default:
+            self.bottomTextSpace.constant = 306;
+            break;
+            
+    }
+    
+    
+}
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 @end

@@ -20,5 +20,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *bigImage;
 @property (weak, nonatomic) IBOutlet UITextView *textInfo;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageHeight;
 
 @end

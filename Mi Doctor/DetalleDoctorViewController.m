@@ -44,6 +44,46 @@
     
     // Do any additional setup after loading the view.
 }
+-(void) viewDidLayoutSubviews{
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    switch ((int) screenBounds.size.width) {
+        case 320:
+            NSLog(@"--5--");
+            //480
+            //568
+            
+            if( (int) screenBounds.size.height <= 480){
+                self.imageHeight.constant = 180;
+            }
+            else{
+                self.imageHeight.constant = 250;
+            }
+            
+            break;
+        case 375:
+            NSLog(@"--6--");
+            self.imageHeight.constant = 300;
+            break;
+        case 414:
+            NSLog(@"--6+--");
+            self.imageHeight.constant = 300;
+            break;
+        case 768:
+            NSLog(@"--Ipad Portrait");
+            
+            break;
+        case 1024:
+            NSLog(@"--Ipad Landscape");
+            
+            break;
+        default:
+            self.imageHeight.constant = 300;
+            break;
+            
+    }
+    
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

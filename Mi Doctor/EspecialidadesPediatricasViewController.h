@@ -12,5 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *myTable;
 @property (strong, nonatomic) IBOutlet NSMutableArray *TableData;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomTextSpace;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *iconHeight;
 
 @end

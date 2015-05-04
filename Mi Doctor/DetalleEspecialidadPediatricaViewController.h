@@ -15,7 +15,13 @@
 
 @property (strong,nonatomic) NSString *speciality;
 @property (strong,nonatomic) NSString *itemDescription;
+@property (strong,nonatomic) NSString *label;
+
 @property (strong,nonatomic) NSMutableArray *doctorsArray;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomTextSpace;
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+
 - (IBAction)callButton:(id)sender;
 - (IBAction)emailButton:(id)sender;
 @end

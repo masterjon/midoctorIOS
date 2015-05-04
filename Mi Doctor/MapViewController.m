@@ -18,9 +18,10 @@
     [super viewDidLoad];
      self.mapView.showsUserLocation = YES;
     [self.mapView addAnnotation:self.pinpoint];
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(self.pinpoint.coordinate, 3500,3500);
+    [self.mapView setRegion:region animated:true];
     // Do any additional setup after loading the view.
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

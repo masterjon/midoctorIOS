@@ -15,6 +15,7 @@
 - (IBAction)fbButton:(id)sender;
 - (IBAction)twButton:(id)sender;
 - (IBAction)docotorizateButton:(id)sender;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *logoHeight;
 
 @end
 

@@ -25,6 +25,7 @@
                         @"image":@"boton_pediatra",
                         @"description":@"Especialidad Médica dedicada a cuidar la salud de niños y niñas desde los prematuros o recién nacidos hasta los adolescentes. Mantiene con sus revisiones continuas la integridad biológica del paciente y lo re-dirige a los especialistas cuando lo considera necesario.",
                         @"speciality":@"Pediatra",
+                        @"label":@"Conoce a nuestros pediatras generales:",
                         @"doctors":@[
                                 @{
                                     @"name":@"Dra. Eunice May Narvaez",
@@ -77,6 +78,7 @@
                         @"image":@"boton_alergologo",
                         @"description":@"El alergólogo es un médico experto en el diagnóstico y tratamiento de las alergias, asma y enfermedades relacionadas con el sistema de defensa, por ejemplo rinitis alérgica, urticarial y eczema.",
                         @"speciality":@"Alergólogo",
+                        @"label":@"Conoce a nuestros alergólogos:",
                         @"doctors":@[
                                 @{
                                     @"name":@"Dr. Francisco Navarrete Suárez",
@@ -108,6 +110,7 @@
                         @"image":@"boton_neonatologo",
                         @"description":@"Especialidad Médica dedicada a cuidar la salud de niños y niñas desde los prematuros o recién nacidos hasta los adolescentes. Mantiene con sus revisiones continuas la integridad biológica del paciente y lo re-dirige a los especialistas cuando lo considera necesario.",
                         @"speciality":@"Neonatólogo",
+                        @"label":@"Conoce a nuestros neonatólogos:",
                         @"doctors":@[
                                 @{
                                     @"name":@"Dra. Miriam Campos Rebolledo",
@@ -138,6 +141,7 @@
                         @"image":@"boton_odontopediatra",
                         @"description":@"La odontopediatría es la rama de la odontología encargada de tratar a los niños o recién nacidos hasta los adolescentes. Tratamiento de caries en dientes temporales o de leche.",
                         @"speciality":@"Odontopediatra",
+                        @"label":@"Conoce a nuestros odontopediatras:",
                         @"doctors":@[
                                 @{
                                     @"name":@"Dr. Mauricio Peña Párraga",
@@ -157,6 +161,7 @@
                         @"image":@"boton_reumatologo",
                         @"description":@"Experto en diagnosticar, tratar y controlar a niños y adolescentes con enfermedades complejas en articulaciones, músculos huesos y órganos como riñones, pulmones, vasos sanguíneos y cerebro.",
                         @"speciality":@"Reumatólogo",
+                        @"label":@"Conoce a nuestros reumatólogos:",
                         @"doctors":@[
                                 @{
                                     @"name":@"Dr. Omar Ernesto  Rojas Pacheco",
@@ -177,10 +182,7 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
@@ -229,9 +231,58 @@
     
     View.speciality=itemdictionary[@"speciality"];
     View.itemDescription=itemdictionary[@"description"];
+    View.label = itemdictionary[@"label"];
     View.doctorsArray=itemdictionary[@"doctors"];
 }
-
+-(void) viewDidLayoutSubviews{
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    switch ((int) screenBounds.size.width) {
+        case 320:
+            NSLog(@"--5--");
+            //480
+            //568
+            
+            self.iconHeight.constant = 0;
+            
+            if( (int) screenBounds.size.height <= 480){
+                self.bottomTextSpace.constant = 230;
+            }
+            else{
+                self.bottomTextSpace.constant = 325;
+            }
+            
+            break;
+        case 375:
+            NSLog(@"--6--");
+            self.bottomTextSpace.constant = 330;
+            self.iconHeight.constant = 125;
+            break;
+        case 414:
+            NSLog(@"--6+--");
+            self.bottomTextSpace.constant = 400;
+            self.iconHeight.constant = 125;
+            break;
+        case 768:
+            NSLog(@"--Ipad Portrait");
+            
+            break;
+        case 1024:
+            NSLog(@"--Ipad Landscape");
+            
+            break;
+        default:
+            self.bottomTextSpace.constant = 330;
+            self.iconHeight.constant = 125;
+            break;
+            
+    }
+    
+    
+}
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 /*
 #pragma mark - Navigation
 

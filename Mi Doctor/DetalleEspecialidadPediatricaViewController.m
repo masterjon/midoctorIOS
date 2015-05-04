@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.textInfo setText:self.itemDescription];
+    [self.myLabel setText:self.label];
     if ([self.speciality isEqualToString:@"Pediatra"]) {
         [self.headerImage setImage:[UIImage imageNamed:@"header_peidatra"]];
     }
@@ -115,10 +116,6 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 /*
 #pragma mark - Navigation
@@ -145,6 +142,51 @@
     NSDictionary *itemdictionary = [self.doctorsArray objectAtIndex:path.row];
     NSLog(@"%@",itemdictionary[@"email"]);
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"mailto:%@",itemdictionary[@"email"]]]];
+}
+
+-(void) viewDidLayoutSubviews{
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    switch ((int) screenBounds.size.width) {
+        case 320:
+            NSLog(@"--5--");
+            //480
+            //568
+            
+            if( (int) screenBounds.size.height <= 480){
+                self.bottomTextSpace.constant = 190;
+            }
+            else{
+                self.bottomTextSpace.constant = 280;
+            }
+            
+            break;
+        case 375:
+            NSLog(@"--6--");
+            self.bottomTextSpace.constant = 380;
+            break;
+        case 414:
+            NSLog(@"--6+--");
+            self.bottomTextSpace.constant = 400;
+            break;
+        case 768:
+            NSLog(@"--Ipad Portrait");
+            
+            break;
+        case 1024:
+            NSLog(@"--Ipad Landscape");
+            
+            break;
+        default:
+            self.bottomTextSpace.constant = 330;
+            break;
+            
+    }
+    
+    
+}
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 @end

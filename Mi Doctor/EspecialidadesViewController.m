@@ -25,6 +25,7 @@
                         @"title":@"Alergólogo",
                         @"image":@"mascota_alergologo",
                         @"description":@"Es el médico especializado en el diagnóstico y tratamiento de las enfermedades  alérgicas, así como alergia a medicamentos y alimentos. Enfermedades que trata: Rinitis alérgica, asma, urticaria. Dermatitis alérgica, alergia a insectos.",
+                        @"label":@"Conoce a nuestros alergólogos:",
                         @"doctors":@[
                                 @{
                                     @"name":@"Dr. Francisco Navarrete Suárez",
@@ -53,32 +54,38 @@
                       @{
                         @"title":@"Audiólogo",
                         @"image":@"mascota_audiologo",
-                        @"description":@"Es el médico especializado en el tratamiento, diagnóstico y rehabilitación de los problemas y discapacidades auditivas. \n Enfermedades que trata:  otitis media, zumbido de oídos, perdida de la audición, vértigo, mareo."
+                        @"description":@"Es el médico especializado en el tratamiento, diagnóstico y rehabilitación de los problemas y discapacidades auditivas. \n Enfermedades que trata:  otitis media, zumbido de oídos, perdida de la audición, vértigo, mareo.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Cardiólogo",
                         @"image":@"mascota_cardio",
-                        @"description":@"El cardiólogo es el especialista médico encargado de atender las enfermedades relacionadas con el corazón y el aparato circulatorio. Enfermedades que trata: hipertensión arterial, insuficiencia cardiaca, pericarditis, endocarditis."
+                        @"description":@"El cardiólogo es el especialista médico encargado de atender las enfermedades relacionadas con el corazón y el aparato circulatorio. Enfermedades que trata: hipertensión arterial, insuficiencia cardiaca, pericarditis, endocarditis.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Cirujano",
                         @"image":@"mascota_cirujano",
-                        @"description":@"Médico especialista  en  prevenir,  diagnosticar y curar diversos padecimientos a través de la realización de cirugías.\n Padecimientos quirúrgicos: Dependiendo del aparato ó sistema afectado es el especialista en realizar cirugías."
+                        @"description":@"Médico especialista  en  prevenir,  diagnosticar y curar diversos padecimientos a través de la realización de cirugías.\n Padecimientos quirúrgicos: Dependiendo del aparato ó sistema afectado es el especialista en realizar cirugías.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Dermatólogo",
                         @"image":@"mascota_dermatologo",
-                        @"description":@"Es el médico especializado en los padecimientos de la piel, ofrece diagnóstico, prevención y tratamiento.\n Enfermedades que trata:  acné, dermatitis, comezón."
+                        @"description":@"Es el médico especializado en los padecimientos de la piel, ofrece diagnóstico, prevención y tratamiento.\n Enfermedades que trata:  acné, dermatitis, comezón.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Endocrinólogo",
                         @"image":@"mascota_endocrinologo",
-                        @"description":@"Es el médico especializado en las enfermedades hormonales, del metabolismo y de los problemas alimenticios o de nutrición. Enfermedades que trata: diabetes, menopausia, obesidad."
+                        @"description":@"Es el médico especializado en las enfermedades hormonales, del metabolismo y de los problemas alimenticios o de nutrición. Enfermedades que trata: diabetes, menopausia, obesidad.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Gastroenterólogo",
                         @"image":@"mascota_gastro",
                         @"description":@"Médico especialista en tratar  y prevenir enfermedades  de tubo digestivo. Enfermedades que trata: Gastritis, esofagitis, colon irritable, problemas del hígado , problemas de digestión.",
+                        @"label":@"Conoce a nuestros gastroenterólogos:",
                         @"doctors":@[
                                 @{
                                     @"name":@"Dr. Raúl Barragán Parrao",
@@ -96,42 +103,50 @@
                       @{
                         @"title":@"Ginecólogo",
                         @"image":@"mascota_ginecologo",
-                        @"description":@"Gineco-obstetra: es el especialista médico encargado del proceso del embarazo, del parto, del puerperio y del tiempo posterior al parto. Enfermedades que trata: enfermedades del adolescente, mujer adulta, y todos aspectos de la salud femenina."
+                        @"description":@"Gineco-obstetra: es el especialista médico encargado del proceso del embarazo, del parto, del puerperio y del tiempo posterior al parto. Enfermedades que trata: enfermedades del adolescente, mujer adulta, y todos aspectos de la salud femenina.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Hematólogo",
                         @"image":@"mascota_hematologo",
-                        @"description":@"Es el especializado médico encargado del diagnóstico y tratamiento de las enfermedades y trastornos de la sangre. Enfermedades que trata: leucemia, anemia, linfomas, trastornos hemorrágicos."
+                        @"description":@"Es el especializado médico encargado del diagnóstico y tratamiento de las enfermedades y trastornos de la sangre. Enfermedades que trata: leucemia, anemia, linfomas, trastornos hemorrágicos.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Inmunólogo",
                         @"image":@"mascota_inmunologo",
-                        @"description":@"Es el médico especializado en estudiar el sistema inmunitario, es decir todo lo relacionado con las defensas de nuestro organismo.\n Enfermedades que trata: lupus, artritis ,vasculitis, anemia."
+                        @"description":@"Es el médico especializado en estudiar el sistema inmunitario, es decir todo lo relacionado con las defensas de nuestro organismo.\n Enfermedades que trata: lupus, artritis ,vasculitis, anemia.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Neurocirujano",
                         @"image":@"mascota_neurocirujano",
-                        @"description":@"Es el profesional especializado en la cirugía del cerebro y la columna vertebral. Enfermedades que trata: neurocisticercosis, tumores cebarles, hernias de disco."
+                        @"description":@"Es el profesional especializado en la cirugía del cerebro y la columna vertebral. Enfermedades que trata: neurocisticercosis, tumores cebarles, hernias de disco.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Neumólogo",
                         @"image":@"mascota_neumologo",
-                        @"description":@"Es el médico especializado en el estudio de las enfermedades del aparato respiratorio. Enfermedades que trata: bronquitis, enfisema pulmonar, neumonía, fibrosis quística."
+                        @"description":@"Es el médico especializado en el estudio de las enfermedades del aparato respiratorio. Enfermedades que trata: bronquitis, enfisema pulmonar, neumonía, fibrosis quística.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Neurólogo",
                         @"image":@"mascota_neurologo",
-                        @"description":@"Es el especialista médico encargado de monitorizar y tratar los trastornos del sistema nervioso. Enfermedades que trata: cefalea (dolor de cabeza), alzheimer, trastornos de aprendizaje."
+                        @"description":@"Es el especialista médico encargado de monitorizar y tratar los trastornos del sistema nervioso. Enfermedades que trata: cefalea (dolor de cabeza), alzheimer, trastornos de aprendizaje.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Nutriólogo",
                         @"image":@"mascota_gastroenterologo",
-                        @"description":@"Es el profesional de la salud, dedicado al estudio de la alimentación del ser humano y nos brinda las herramientas para tener una buena alimentación. Enfermedades que trata: personas sanas que desean tener una alimentación balanceada, obesidad, desnutrición."
+                        @"description":@"Es el profesional de la salud, dedicado al estudio de la alimentación del ser humano y nos brinda las herramientas para tener una buena alimentación. Enfermedades que trata: personas sanas que desean tener una alimentación balanceada, obesidad, desnutrición.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Odontólogo",
                         @"image":@"mascota_odontologo",
                         @"description":@"Rama de la ciencia de la salud dedicada a la prevención ,diagnóstico y tratamiento  de dientes y encías. Enfermedades que trata : caries , mal oclusión , limpieza dental , corrección de superposición de dientes.",
+                        @"label":@"Conoce a nuestros odontólogos:",
                         @"doctors":@[
                                 @{
                                     @"name":@"Dra. Mónica Callejo",
@@ -149,42 +164,50 @@
                       @{
                         @"title":@"Oncólogo",
                         @"image":@"mascota_oncologo",
-                        @"description":@"Es el especialista médico encargado del análisis, diagnóstico y tratamiento del cáncer. Enfermedades que trata: cáncer de mama, cáncer de pulmón, cáncer de colon."
+                        @"description":@"Es el especialista médico encargado del análisis, diagnóstico y tratamiento del cáncer. Enfermedades que trata: cáncer de mama, cáncer de pulmón, cáncer de colon.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Ortopedista",
                         @"image":@"mascota_ortopedista",
-                        @"description":@"Es el médico especializado en la prevención y tratamiento de las afecciones o traumas de huesos y músculos. Enfermedades que trata:  fracturas, artritis, tendosinovitis estenosante, distensión muscular."
+                        @"description":@"Es el médico especializado en la prevención y tratamiento de las afecciones o traumas de huesos y músculos. Enfermedades que trata:  fracturas, artritis, tendosinovitis estenosante, distensión muscular.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Otorrinolaringólogo",
                         @"image":@"mascota_otorrino",
-                        @"description":@"médico especialista enfocado a las enfermedades de oídos, nariz y garganta. Enfermedades que trata: otitis , rinitis, laringitis , traqueítis, desviación septal, pólipos nasales."
+                        @"description":@"médico especialista enfocado a las enfermedades de oídos, nariz y garganta. Enfermedades que trata: otitis , rinitis, laringitis , traqueítis, desviación septal, pólipos nasales.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Psicólogo",
                         @"image":@"mascota_psicologo",
-                        @"description":@"Es el profesional médico especializado en la salud mental. Enfermedades que trata: anorexia, apatía, demencia, depresión."
+                        @"description":@"Es el profesional médico especializado en la salud mental. Enfermedades que trata: anorexia, apatía, demencia, depresión.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Reumatólogo",
                         @"image":@"mascota_reumatologo",
-                        @"description":@"El reumatólogo es el médico especialista encargado del diagnóstico y atención de las enfermedades relacionadas con el aparato locomotor es decir con cualquier malestar del cuerpo. Enfermedades que trata: artritis, osteoporosis, fibromialgia entre otras."
+                        @"description":@"El reumatólogo es el médico especialista encargado del diagnóstico y atención de las enfermedades relacionadas con el aparato locomotor es decir con cualquier malestar del cuerpo. Enfermedades que trata: artritis, osteoporosis, fibromialgia entre otras.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Terapia Intensiva Pediátrica",
                         @"image":@"mascota_terapia_intensiva",
-                        @"description":@"Pediatra especialista en atender a todo niño en estado de terapia intensiva."
+                        @"description":@"Pediatra especialista en atender a todo niño en estado de terapia intensiva.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Urgencias Pediátricas",
                         @"image":@"mascota_urgencias_pediatricas",
-                        @"description":@"Pediatra especialista en atender a todo niño que llegue a  cualquier servicio de urgencias."
+                        @"description":@"Pediatra especialista en atender a todo niño que llegue a  cualquier servicio de urgencias.",
+                        @"label":@"",
                       },
                       @{
                         @"title":@"Urólogo",
                         @"image":@"mascota_urologo",
-                        @"description":@"Es el médico especializado en el estudio de las vías urinarias, ofrece tratamiento, prevención y diagnóstico a pacientes de todas las edades. Enfermedades que trata: infección de vías urinarias y enfermedades de transmisión sexual."
+                        @"description":@"Es el médico especializado en el estudio de las vías urinarias, ofrece tratamiento, prevención y diagnóstico a pacientes de todas las edades. Enfermedades que trata: infección de vías urinarias y enfermedades de transmisión sexual.",
+                        @"label":@"",
                       },
                       nil];
     // Do any additional setup after loading the view.
@@ -239,6 +262,7 @@
         View.itemTitle=itemdictionary[@"title"];
         View.itemImageName=itemdictionary[@"image"];
         View.itemDescription=itemdictionary[@"description"];
+        View.label= itemdictionary[@"label"];
         View.doctorsArray=itemdictionary[@"doctors"];
     }
     else if ([segue.identifier isEqualToString:@"pediatraSegue"]){

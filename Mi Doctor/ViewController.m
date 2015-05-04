@@ -80,4 +80,23 @@
 - (IBAction)docotorizateButton:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.directoriomidoctor.com/doctorizate/"]];
 }
+-(void) viewDidLayoutSubviews{
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    switch ((int) screenBounds.size.width) {
+        case 320:
+            NSLog(@"--4--");
+            //480
+            //568
+            
+            if( (int) screenBounds.size.height <= 480){
+                self.logoHeight.constant = 100;
+            }
+           
+            
+            break;
+            
+    }
+    
+    
+}
 @end
