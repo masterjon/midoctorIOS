@@ -87,7 +87,7 @@
         NSDictionary *itemdictionary = [self.doctorsArray objectAtIndex:path.row];
         
         View.doctorName=itemdictionary[@"name"];
-        View.doctorImage=itemdictionary[@"image"];
+        View.doctorImages=itemdictionary[@"images"];
         View.doctorPhone=itemdictionary[@"phone"];
         View.doctorEmail=itemdictionary[@"email"];
         View.doctorAddress=itemdictionary[@"address"];

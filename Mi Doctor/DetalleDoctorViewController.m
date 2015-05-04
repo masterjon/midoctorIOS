@@ -8,7 +8,8 @@
 
 #import "DetalleDoctorViewController.h"
 
-@interface DetalleDoctorViewController ()
+@interface DetalleDoctorViewController ()  <KIImagePagerDelegate, KIImagePagerDataSource>
+@property (weak, nonatomic) IBOutlet KIImagePager *_imagePager;
 
 @end
 
@@ -16,8 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //__imagePager.delegate = self;
+   // __imagePager.dataSource = self;
+     self._imagePager.imageCounterDisabled=YES;
     [self.nameLabel setText:self.doctorName];
-    [self.bigImage setImage:[UIImage imageNamed:self.doctorImage]];
+    self.uiImagesArray = [[NSMutableArray alloc] init];
+    for (NSString *imageName in self.doctorImages) {
+        UIImage *img =[UIImage imageNamed:imageName];
+        NSLog(@"%@",imageName);
+        if (img){
+        [self.uiImagesArray addObject:img];
+        }
+    }
     
     NSString *text = [NSString stringWithFormat:@"%@\n%@\n%@\n%@",self.doctorAddress,self.doctorEmail,self.doctorPhone,self.doctorServices];
     [self.textInfo setText:text];
@@ -89,7 +100,36 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+   
+    self._imagePager.pageControl.pageIndicatorTintColor = [UIColor blackColor];
+    self._imagePager.slideshowTimeInterval = 0.0f;
+    self._imagePager.slideshowShouldCallScrollToDelegate = YES;
+}
+- (NSArray *) arrayWithImages:(KIImagePager*)pager
+{
+    
+         return self.uiImagesArray;
+}
 
+- (UIViewContentMode) contentModeForImage:(NSUInteger)image inPager:(KIImagePager *)pager
+{
+    return UIViewContentModeScaleAspectFill;
+}
+
+
+#pragma mark - KIImagePager Delegate
+- (void) imagePager:(KIImagePager *)imagePager didScrollToIndex:(NSUInteger)index
+{
+    NSLog(@"%s %lu", __PRETTY_FUNCTION__, (unsigned long)index);
+}
+
+- (void) imagePager:(KIImagePager *)imagePager didSelectImageAtIndex:(NSUInteger)index
+{
+    NSLog(@"%s %lu", __PRETTY_FUNCTION__, (unsigned long)index);
+}
 /*
 #pragma mark - Navigation
 
