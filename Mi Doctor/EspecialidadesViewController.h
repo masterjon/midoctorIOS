@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EspecialidadesViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *myTable;
+@interface EspecialidadesViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+//<UITableViewDataSource,UITableViewDelegate>
+//@property (weak, nonatomic) IBOutlet UITableView *myTable;
 @property (strong, nonatomic) IBOutlet NSMutableArray *TableData;
-@property (weak, nonatomic) IBOutlet UIButton *pediatraButton;
+//@property (weak, nonatomic) IBOutlet UIButton *pediatraButton;
 
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 
 @end

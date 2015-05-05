@@ -17,9 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.pediatraButton.layer setCornerRadius:10];
-    self.pediatraButton.clipsToBounds=YES;
+//    [self.pediatraButton.layer setCornerRadius:10];
+//    self.pediatraButton.clipsToBounds=YES;
+    self.pickerView.transform= CGAffineTransformMakeScale(1.2, 1.2);
     self.TableData = [[NSMutableArray alloc] initWithObjects:
+                      @{
+                        @"title":@"Selecciona:"
+                        },
+                      @{
+                        @"title":@"Pediatra"
+                        },
 
                       @{
                         @"title":@"Alergólogo",
@@ -218,56 +225,97 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 1;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//#warning Potentially incomplete method implementation.
+//    // Return the number of sections.
+//    return 1;
+//}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return [self.TableData count];
-}
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//#warning Incomplete method implementation.
+//    // Return the number of rows in the section.
+//    return [self.TableData count];
+//}
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    // Configure the cell...
+//    static NSString *simpleTableIdentifier = @"mycc";
+//    
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+//
+//    if (cell == nil) {
+//        
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+//        
+//    }
+//    UILabel *label;
+//    
+//    label = (UILabel *)[cell viewWithTag:3];
+//    NSDictionary *mydict;
+//    mydict=[self.TableData objectAtIndex:indexPath.row];
+//    label.text = mydict[@"title"];
+//
+//    [label.layer setCornerRadius:10];
+//    label.clipsToBounds=YES;
+//    return cell;
+//}
+//-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+//    if ([segue.identifier isEqualToString:@"doctorSegue"]) {
+//        DetalleEspecialidadViewController *View = [[DetalleEspecialidadViewController alloc] init];
+//        View = [segue destinationViewController];
+//        NSArray *arrayOfIndexPaths = [self.myTable  indexPathsForSelectedRows];
+//        NSIndexPath *path = [arrayOfIndexPaths firstObject];
+//        NSDictionary *itemdictionary = [self.TableData objectAtIndex:path.row];
+//
+//        View.itemTitle=itemdictionary[@"title"];
+//        View.itemImageName=itemdictionary[@"image"];
+//        View.itemDescription=itemdictionary[@"description"];
+//        View.label= itemdictionary[@"label"];
+//        View.doctorsArray=itemdictionary[@"doctors"];
+//    }
+//    else if ([segue.identifier isEqualToString:@"pediatraSegue"]){
+//    }
+//}
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
     
-    // Configure the cell...
-    static NSString *simpleTableIdentifier = @"mycc";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-
-    if (cell == nil) {
-        
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    if([self.TableData[row][@"title"] isEqualToString:@"Selecciona:"]){
         
     }
-    UILabel *label;
-    
-    label = (UILabel *)[cell viewWithTag:3];
-    NSDictionary *mydict;
-    mydict=[self.TableData objectAtIndex:indexPath.row];
-    label.text = mydict[@"title"];
+    else if ([self.TableData[row][@"title"] isEqualToString:@"Pediatra"]){
+        EspecialidadesViewController *View = [self.storyboard instantiateViewControllerWithIdentifier:@"DetalleEspecialidadPediatricaView"];
+        [self.navigationController pushViewController:View animated:YES];
+    }
+    else{
+        
+        DetalleEspecialidadViewController *View = [self.storyboard instantiateViewControllerWithIdentifier:@"DetalleEspecialidadView"];
 
-    [label.layer setCornerRadius:10];
-    label.clipsToBounds=YES;
-    return cell;
-}
--(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"doctorSegue"]) {
-        DetalleEspecialidadViewController *View = [[DetalleEspecialidadViewController alloc] init];
-        View = [segue destinationViewController];
-        NSArray *arrayOfIndexPaths = [self.myTable  indexPathsForSelectedRows];
-        NSIndexPath *path = [arrayOfIndexPaths firstObject];
-        NSDictionary *itemdictionary = [self.TableData objectAtIndex:path.row];
-
+        NSDictionary *itemdictionary = [self.TableData objectAtIndex:row];
+        
         View.itemTitle=itemdictionary[@"title"];
         View.itemImageName=itemdictionary[@"image"];
         View.itemDescription=itemdictionary[@"description"];
         View.label= itemdictionary[@"label"];
         View.doctorsArray=itemdictionary[@"doctors"];
+
+        [self.navigationController pushViewController:View animated:YES];
     }
-    else if ([segue.identifier isEqualToString:@"pediatraSegue"]){
-    }
+}
+- (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+// The number of rows of data
+- (int)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return self.TableData.count;
+}
+
+// The data to return for the row and component (column) that's being passed in
+- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return self.TableData[row][@"title"];
 }
 /*
 #pragma mark - Navigation
