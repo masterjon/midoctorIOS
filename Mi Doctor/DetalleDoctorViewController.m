@@ -32,25 +32,26 @@
     
     NSString *text = [NSString stringWithFormat:@"%@\n%@\n%@\n%@",self.doctorAddress,self.doctorEmail,self.doctorPhone,self.doctorServices];
     [self.textInfo setText:text];
-    
+    if ([self.doctorSpeciality isEqualToString:@"Pediatra"]) {
+        [self.headerImage setImage:[UIImage imageNamed:@"header_peidatra"]];
+    }
     if ([self.doctorSpeciality isEqualToString:@"Alergólogo"]) {
         [self.headerImage setImage:[UIImage imageNamed:@"header_alergologo"]];
     }
     else if ([self.doctorSpeciality isEqualToString:@"Gastroenterólogo"]){
         [self.headerImage setImage:[UIImage imageNamed:@"header_gastroenterologo"]];
     }
-    else if ([self.doctorSpeciality isEqualToString:@""]){
+    else if ([self.doctorSpeciality isEqualToString:@"Neonatólogo"]){
         [self.headerImage setImage:[UIImage imageNamed:@"header_neonatologo"]];
     }
-    else if ([self.doctorSpeciality isEqualToString:@""]){
+    else if ([self.doctorSpeciality isEqualToString:@"Odontopediatra"] || [self.doctorSpeciality isEqualToString:@"Cirujana Dentista"]){
         [self.headerImage setImage:[UIImage imageNamed:@"header_odontologo"]];
     }
-    else if ([self.doctorSpeciality isEqualToString:@""]){
-        [self.headerImage setImage:[UIImage imageNamed:@"header_peidatra"]];
-    }
-    else if ([self.doctorSpeciality isEqualToString:@""]) {
+    else if ([self.doctorSpeciality isEqualToString:@"Reumatólogo"]) {
         [self.headerImage setImage:[UIImage imageNamed:@"header_reumatologo"]];
     }
+    
+
     
     
     // Do any additional setup after loading the view.

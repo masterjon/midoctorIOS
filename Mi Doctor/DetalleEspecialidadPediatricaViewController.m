@@ -170,7 +170,7 @@
             break;
         case 768:
             NSLog(@"--Ipad Portrait");
-            
+            self.bottomTextSpace.constant = 650;
             break;
         case 1024:
             NSLog(@"--Ipad Landscape");

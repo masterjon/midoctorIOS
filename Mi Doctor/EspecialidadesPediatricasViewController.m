@@ -200,7 +200,7 @@
     static NSString *simpleTableIdentifier = @"mycell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
+    cell.backgroundColor = [UIColor clearColor];
     if (cell == nil) {
         
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
@@ -264,7 +264,8 @@
             break;
         case 768:
             NSLog(@"--Ipad Portrait");
-            
+            self.bottomTextSpace.constant = 700;
+            self.iconHeight.constant = 125;
             break;
         case 1024:
             NSLog(@"--Ipad Landscape");
