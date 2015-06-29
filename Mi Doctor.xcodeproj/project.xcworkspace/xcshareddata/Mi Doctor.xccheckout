@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F37D8546-4142-48D8-B830-355F57BF7531</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Mi Doctor</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A2D1F3CDBB92D8FD049853FDB47104FA4843611B</key>
 		<string>https://github.com/masterjon/midoctorIOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Mi Doctor.xcodeproj</string>
+	<string>Mi Doctor.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A2D1F3CDBB92D8FD049853FDB47104FA4843611B</key>

@@ -59,19 +59,19 @@
 }
 
 - (IBAction)fbButton:(id)sender {
-    NSString *fbLink = @"fb://profile/765315823505858";
+    NSString *fbLink = @"fb://profile/1620294414875328";
     if (![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:fbLink]]) {
-        fbLink = @"https://www.facebook.com/MiDoctorDirectorio?fref=ts";
+        fbLink = @"https://www.facebook.com/TuDoctor";
     }
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:fbLink]];
 
 }
 
 - (IBAction)twButton:(id)sender {
-    NSString *twLink = @"twitter://user?screen_name=midoctor_";
+    NSString *twLink = @"twitter://user?screen_name=TuDoctor_";
     
     if (![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:twLink]]) {
-        twLink = @"https://twitter.com/midoctor_";
+        twLink = @"https://twitter.com/TuDoctor_";
         
     }
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:twLink]];
