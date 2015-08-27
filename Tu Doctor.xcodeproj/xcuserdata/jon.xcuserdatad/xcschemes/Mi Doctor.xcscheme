@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FCE6102E1ADB7BC300F1E707"
-               BuildableName = "Mi Doctor.app"
-               BlueprintName = "Mi Doctor"
-               ReferencedContainer = "container:Mi Doctor.xcodeproj">
+               BuildableName = "Tu Doctor.app"
+               BlueprintName = "Tu Doctor"
+               ReferencedContainer = "container:Tu Doctor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FCE610471ADB7BC400F1E707"
-               BuildableName = "Mi DoctorTests.xctest"
-               BlueprintName = "Mi DoctorTests"
-               ReferencedContainer = "container:Mi Doctor.xcodeproj">
+               BuildableName = "Tu DoctorTests.xctest"
+               BlueprintName = "Tu DoctorTests"
+               ReferencedContainer = "container:Tu Doctor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FCE610471ADB7BC400F1E707"
-               BuildableName = "Mi DoctorTests.xctest"
-               BlueprintName = "Mi DoctorTests"
-               ReferencedContainer = "container:Mi Doctor.xcodeproj">
+               BuildableName = "Tu DoctorTests.xctest"
+               BlueprintName = "Tu DoctorTests"
+               ReferencedContainer = "container:Tu Doctor.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FCE6102E1ADB7BC300F1E707"
-            BuildableName = "Mi Doctor.app"
-            BlueprintName = "Mi Doctor"
-            ReferencedContainer = "container:Mi Doctor.xcodeproj">
+            BuildableName = "Tu Doctor.app"
+            BlueprintName = "Tu Doctor"
+            ReferencedContainer = "container:Tu Doctor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -68,7 +68,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FCE6102E1ADB7BC300F1E707"
-            BuildableName = "Mi Doctor.app"
-            BlueprintName = "Mi Doctor"
-            ReferencedContainer = "container:Mi Doctor.xcodeproj">
+            BuildableName = "Tu Doctor.app"
+            BlueprintName = "Tu Doctor"
+            ReferencedContainer = "container:Tu Doctor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FCE6102E1ADB7BC300F1E707"
-            BuildableName = "Mi Doctor.app"
-            BlueprintName = "Mi Doctor"
-            ReferencedContainer = "container:Mi Doctor.xcodeproj">
+            BuildableName = "Tu Doctor.app"
+            BlueprintName = "Tu Doctor"
+            ReferencedContainer = "container:Tu Doctor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Mi Doctor.xcodeproj">
+      location = "self:/Users/jon/XcodeProjects/Mi Doctor/Tu Doctor.xcodeproj">
    </FileRef>
 </Workspace>

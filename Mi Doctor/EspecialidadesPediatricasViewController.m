@@ -183,49 +183,11 @@
 }
 
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 1;
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return [self.TableData count];
-}
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    // Configure the cell...
-    static NSString *simpleTableIdentifier = @"mycell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    cell.backgroundColor = [UIColor clearColor];
-    if (cell == nil) {
-        
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-        
-    }
-    UIView *backgroundView;
-    UIImageView *myImage;
-    myImage = (UIImageView *)[cell viewWithTag:1];
-    backgroundView = (UIView *)[cell viewWithTag:2];
-    [backgroundView.layer setCornerRadius:10];
-    backgroundView.clipsToBounds=YES;
-    NSDictionary *mydict;
-    mydict=[self.TableData objectAtIndex:indexPath.row];
-
-    [myImage setImage:[UIImage imageNamed:mydict[@"image"]]];
-    
-    
-    //[label.layer setCornerRadius:10];
-    //label.clipsToBounds=YES;
-    return cell;
-}
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     DetalleEspecialidadPediatricaViewController *View = [[DetalleEspecialidadPediatricaViewController alloc] init];
     View = [segue destinationViewController];
-    NSArray *arrayOfIndexPaths = [self.myTable  indexPathsForSelectedRows];
+    NSArray *arrayOfIndexPaths = [self.myCollection  indexPathsForSelectedItems];
     NSIndexPath *path = [arrayOfIndexPaths firstObject];
     NSDictionary *itemdictionary = [self.TableData objectAtIndex:path.row];
     
@@ -234,6 +196,7 @@
     View.label = itemdictionary[@"label"];
     View.doctorsArray=itemdictionary[@"doctors"];
 }
+
 -(void) viewDidLayoutSubviews{
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     switch ((int) screenBounds.size.width) {
@@ -293,5 +256,91 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return [self.TableData count];
+}
+
+-(UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"menuCell" forIndexPath:indexPath];
+    UIView *backgroundView;
+    UIImageView *myImage;
+    myImage = (UIImageView *)[cell viewWithTag:1];
+    backgroundView = (UIView *)[cell viewWithTag:2];
+    [backgroundView.layer setCornerRadius:10];
+    backgroundView.clipsToBounds=YES;
+    NSDictionary *cellDictionary = [self.TableData objectAtIndex:indexPath.row];
+    NSString *imageItem = [cellDictionary objectForKey:@"image"];
+    myImage.image = [UIImage imageNamed:imageItem];
+    
+    return cell;
+}
+-(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSDictionary *menuItemDictionary = [self.TableData objectAtIndex:indexPath.row];
+    
+//    ViewController *viewC = [self.storyboard instantiateViewControllerWithIdentifier:menuItemDictionary[@"target"]];
+//    [self.navigationController pushViewController:viewC animated:YES];
+    
+    
+}
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    int top = 10;
+    int left = 0;
+    int bottom = 10;
+    int right = 0;
+    NSLog(@"%i",(int)screenBounds.size.width);
+    switch ((int) screenBounds.size.width) {
+        case 320:
+            NSLog(@"--5--");
+            left = 5;
+            right = 5;
+            break;
+        case 375:
+            NSLog(@"--6--");
+            left = 20;
+            right = 20;
+            break;
+        case 414:
+            NSLog(@"--6+--");
+            left = 30;
+            right = 30;
+            break;
+        case 768:
+            NSLog(@"--Ipad Portrait");
+            left = 50;
+            right = 50;
+            top = 50;
+            break;
+        case 1024:
+            NSLog(@"--Ipad Landscape");
+            left = 50;
+            right = 50;
+            top = 50;
+            break;
+        default:
+            left = 5;
+            right = 5;
+            break;
+            
+    }
+    return UIEdgeInsetsMake(top, left, bottom, right);
+}
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    // Adjust cell size for orientation
+    int screenSize = (int) screenBounds.size.width;
+    //Size of cells for ipad
+    if(screenSize == 768 || screenSize == 1024){
+        return CGSizeMake(282.f, 282.f);
+    }
+    
+    //Size of cells for iphones
+    return CGSizeMake(150.f,152.f);
+    
+}
 
 @end
