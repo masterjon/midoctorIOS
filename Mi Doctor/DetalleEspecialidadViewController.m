@@ -33,7 +33,9 @@
 
     // Do any additional setup after loading the view.
 }
-
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setBackgroundColor:[UIColor clearColor]];
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
@@ -89,6 +91,7 @@
         View.doctorAddress=itemdictionary[@"address"];
         View.doctorServices=itemdictionary[@"services"];
         View.doctorSpeciality=itemdictionary[@"speciality"];
+        View.doctorWebsite=itemdictionary[@"website"];
     }
     else if ([segue.identifier isEqualToString:@"mapViewSegue"]){
         MapViewController *View = [[MapViewController alloc] init];

@@ -17,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.textInfo.layer setCornerRadius:10];
+    self.textInfo.clipsToBounds=YES;
+
     [self.textInfo setText:self.itemDescription];
     [self.myLabel setText:self.label];
     if ([self.speciality isEqualToString:@"Pediatra"]) {
@@ -37,6 +40,9 @@
 
 
     // Do any additional setup after loading the view.
+}
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setBackgroundColor:[UIColor clearColor]];
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
@@ -93,6 +99,7 @@
         View.doctorAddress=itemdictionary[@"address"];
         View.doctorServices=itemdictionary[@"services"];
         View.doctorSpeciality=itemdictionary[@"speciality"];
+        View.doctorWebsite=itemdictionary[@"website"];
     }
     else if ([segue.identifier isEqualToString:@"mapViewSegue"]){
         MapViewController *View = [[MapViewController alloc] init];

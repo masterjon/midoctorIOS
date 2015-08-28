@@ -21,6 +21,7 @@
    // __imagePager.dataSource = self;
      self._imagePager.imageCounterDisabled=YES;
     [self.nameLabel setText:self.doctorName];
+    [self.website setText:self.doctorWebsite];
     self.uiImagesArray = [[NSMutableArray alloc] init];
     for (NSString *imageName in self.doctorImages) {
         UIImage *img =[UIImage imageNamed:imageName];
@@ -65,10 +66,13 @@
             //568
             
             if( (int) screenBounds.size.height <= 480){
-                self.imageHeight.constant = 180;
+                self.imageHeight.constant = 480;
+                self.left_margin.constant = 20;
+                self.right_margin.constant = 20;
+                
             }
             else{
-                self.imageHeight.constant = 250;
+                self.imageHeight.constant = 320;
             }
             
             break;
@@ -82,7 +86,8 @@
             break;
         case 768:
             NSLog(@"--Ipad Portrait");
-            
+            self.left_margin.constant = 60;
+            self.right_margin.constant = 60;
             break;
         case 1024:
             NSLog(@"--Ipad Landscape");

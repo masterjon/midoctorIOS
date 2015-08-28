@@ -104,7 +104,8 @@
                                     @"email":@"raulbapa@hotmail.com",
                                     @"map_coord":@"21.13655,-86.827488",
                                     @"address":@"Av Tulum Lote 1 mza 1  consultorio  315      SM 12 Hospital Galenia CP. 77505",
-                                    @"services":@""
+                                    @"services":@"",
+                                    @"website":@"www.gastroenterologiacancun.com"
                                     }
                                 ]
                       },
@@ -154,20 +155,21 @@
                         @"title":@"Odontólogo",
                         @"image":@"mascota_odontologo",
                         @"description":@"Rama de la ciencia de la salud dedicada a la prevención ,diagnóstico y tratamiento  de dientes y encías. Enfermedades que trata : caries , mal oclusión , limpieza dental , corrección de superposición de dientes.",
-                        @"label":@"Conoce a nuestros odontólogos:",
-                        @"doctors":@[
-                                @{
-                                    @"name":@"Dra. Mónica Callejo",
-                                    @"speciality":@"Cirujana Dentista",
-                                    @"logo":@"logo_monica_callejo",
-                                    @"images":@[@"logo_monica_callejo_big"],
-                                    @"phone":@"",
-                                    @"email":@"monica_callejo@hotmail.com",
-                                    @"map_coord":@"21.136610,86.827509",
-                                    @"address":@"Hospital Galenia consultorio 203-2 Av. tulum  mz 01 lote 01 SM 12 Cancún, Quintana Roo. CP. 77505",
-                                    @"services":@"ODONTOLOGIA ESTETICA Y PREVENTIVA \n FACULTAD DE ODONTOLOGIA UNAM \n CEDULA PROFESIONAL 2163854 \n CERTIFICADA ADM E.C-0403-01/1 \n *odontologia preventiva \n *odontologia estetica \n *implantes dentales \n *emergencias dentales \n twitter @CdMonica \n facebook: Dra. Monica Callejo Mi dentista Cancun"
-                                    }
-                                ]
+                        @"label":@"",
+//                        @"label":@"Conoce a nuestros odontólogos:",
+//                        @"doctors":@[
+//                                @{
+//                                    @"name":@"Dra. Mónica Callejo",
+//                                    @"speciality":@"Cirujana Dentista",
+//                                    @"logo":@"logo_monica_callejo",
+//                                    @"images":@[@"logo_monica_callejo_big"],
+//                                    @"phone":@"",
+//                                    @"email":@"monica_callejo@hotmail.com",
+//                                    @"map_coord":@"21.136610,86.827509",
+//                                    @"address":@"Hospital Galenia consultorio 203-2 Av. tulum  mz 01 lote 01 SM 12 Cancún, Quintana Roo. CP. 77505",
+//                                    @"services":@"ODONTOLOGIA ESTETICA Y PREVENTIVA \n FACULTAD DE ODONTOLOGIA UNAM \n CEDULA PROFESIONAL 2163854 \n CERTIFICADA ADM E.C-0403-01/1 \n *odontologia preventiva \n *odontologia estetica \n *implantes dentales \n *emergencias dentales \n twitter @CdMonica \n facebook: Dra. Monica Callejo Mi dentista Cancun"
+//                                    }
+//                                ]
                         },
                       @{
                         @"title":@"Oncólogo",
@@ -297,6 +299,7 @@
         View.itemDescription=itemdictionary[@"description"];
         View.label= itemdictionary[@"label"];
         View.doctorsArray=itemdictionary[@"doctors"];
+        
 
         [self.navigationController pushViewController:View animated:YES];
     }

@@ -56,7 +56,7 @@
                                     @"images":@[@"doctor_bg",@"mascota_bg_general"],
                                     @"phone":@"8482946",
                                     @"email":@"raulmedina1956@hotmail.com",
-                                    @"map_coord":@"21.1514541,-86.8414688",
+                                    @"map_coord":@"21.149954,-86.848554",
                                     @"address":@"Av. Andrés Quintana Roo  157  SM 45 Cancún Quintana Roo",
                                     @"services":@""
                                     },
@@ -69,7 +69,8 @@
                                     @"email":@"genny_pasitos@hotmail.com",
                                     @"map_coord":@"21.149954,-86.848554",
                                     @"address":@"Av Andrés Quintana Roo num 157 Sm 45\nPasitos.Cancún Quintana Roo  CP 77500",
-                                    @"services":@""
+                                    @"services":@"",
+                                    @"website":@"www.pasitos.mx"
                                     },
                                 ]
                         },
@@ -150,7 +151,7 @@
                                     @"images":@[@"logo_mauricio_axayacatl_big"],
                                     @"phone":@"8021582",
                                     @"email":@"pena@teleton-qroo.org.mx",
-                                    @"map_coord":@"21.150147,-86.848776",
+                                    @"map_coord":@"21.1435915,-86.8290708",
                                     @"address":@"Av. Nichupte 22  Pabellón Caribe  Local 10 grupo médico integral",
                                     @"services":@""
                                     },

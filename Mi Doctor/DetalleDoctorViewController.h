@@ -16,10 +16,15 @@
 @property (strong,nonatomic) NSString *doctorAddress;
 @property (strong,nonatomic) NSString *doctorServices;
 @property (strong,nonatomic) NSString *doctorSpeciality;
+@property (strong,nonatomic) NSString *doctorWebsite;
 @property (strong,nonatomic) NSMutableArray *uiImagesArray;
 @property (weak, nonatomic) IBOutlet UIImageView *headerImage;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UITextView *textInfo;
+
+@property (weak, nonatomic) IBOutlet UITextView *website;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *left_margin;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *right_margin;
 
 @end
