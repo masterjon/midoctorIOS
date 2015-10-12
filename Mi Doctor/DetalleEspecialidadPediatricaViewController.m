@@ -105,10 +105,10 @@
         MapViewController *View = [[MapViewController alloc] init];
         View = [segue destinationViewController];
         View = [segue destinationViewController];
-        NSArray *arrayOfIndexPaths = [self.doctorsTable  indexPathsForSelectedRows];
-        NSIndexPath *path = [arrayOfIndexPaths firstObject];
-        NSDictionary *itemdictionary = [self.doctorsArray objectAtIndex:path.row];
-        
+        CGPoint touchPoint = [sender convertPoint:CGPointZero toView:self.doctorsTable]; //
+        NSIndexPath *clickedButtonIndexPath = [self.doctorsTable indexPathForRowAtPoint:touchPoint];
+        NSDictionary *itemdictionary = [self.doctorsArray objectAtIndex:clickedButtonIndexPath.row];
+        NSLog(@"%@",itemdictionary[@"map_coord"]);
         NSString *coordinateStr=itemdictionary[@"map_coord"];
         NSArray *coordParts = [coordinateStr componentsSeparatedByString:@","];
         CLLocationCoordinate2D coord = CLLocationCoordinate2DMake([coordParts[0] floatValue], [coordParts[1] floatValue]);
@@ -135,18 +135,21 @@
 */
 
 - (IBAction)callButton:(id)sender {
-    NSArray *arrayOfIndexPaths = [self.doctorsTable  indexPathsForSelectedRows];
-    NSIndexPath *path = [arrayOfIndexPaths firstObject];
-    NSDictionary *itemdictionary = [self.doctorsArray objectAtIndex:path.row];
+    CGPoint touchPoint = [sender convertPoint:CGPointZero toView:self.doctorsTable];
+    NSIndexPath *clickedButtonIndexPath = [self.doctorsTable indexPathForRowAtPoint:touchPoint];
+
+//    NSArray *arrayOfIndexPaths = [self.doctorsTable  indexPathForSelectedRow];
+  //  NSIndexPath *path = [arrayOfIndexPaths objectAtIndex:0];
+    NSDictionary *itemdictionary = [self.doctorsArray objectAtIndex:clickedButtonIndexPath.row];
     
     NSLog(@"%@",itemdictionary[@"phone"]);
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",itemdictionary[@"phone"]]]];
 }
 
 - (IBAction)emailButton:(id)sender {
-    NSArray *arrayOfIndexPaths = [self.doctorsTable  indexPathsForSelectedRows];
-    NSIndexPath *path = [arrayOfIndexPaths firstObject];
-    NSDictionary *itemdictionary = [self.doctorsArray objectAtIndex:path.row];
+    CGPoint touchPoint = [sender convertPoint:CGPointZero toView:self.doctorsTable]; //
+    NSIndexPath *clickedButtonIndexPath = [self.doctorsTable indexPathForRowAtPoint:touchPoint];
+    NSDictionary *itemdictionary = [self.doctorsArray objectAtIndex:clickedButtonIndexPath.row];
     NSLog(@"%@",itemdictionary[@"email"]);
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"mailto:%@",itemdictionary[@"email"]]]];
 }
@@ -188,6 +191,7 @@
             break;
             
     }
+    [self.view layoutIfNeeded];
     
     
 }

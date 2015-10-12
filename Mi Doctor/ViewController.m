@@ -80,7 +80,7 @@
 }
 
 - (IBAction)docotorizateButton:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.directoriomidoctor.com/doctorizate/"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.tudoctor.net/doctorizate/"]];
 }
 -(void) viewDidLayoutSubviews{
     CGRect screenBounds = [[UIScreen mainScreen] bounds];

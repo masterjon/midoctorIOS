@@ -98,7 +98,7 @@
             break;
             
     }
-    
+    [self.view layoutIfNeeded];
     
 }
 

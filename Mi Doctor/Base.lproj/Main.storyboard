@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Kl-Zp-sbA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Kl-Zp-sbA">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo_1" translatesAutoresizingMaskIntoConstraints="NO" id="enJ-FM-Dnu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo_1" translatesAutoresizingMaskIntoConstraints="NO" id="enJ-FM-Dnu">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_home" translatesAutoresizingMaskIntoConstraints="NO" id="7nN-OO-FjU">
@@ -53,10 +53,10 @@
                                     <rect key="frame" x="246" y="645" width="308" height="70"/>
                                 </variation>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNf-2O-wPv">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dNf-2O-wPv">
                                 <rect key="frame" x="0.0" y="523" width="600" height="45"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znK-yq-R8K">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znK-yq-R8K">
                                         <rect key="frame" x="152" y="8" width="136" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="136" id="W83-zE-RS4"/>
@@ -69,7 +69,7 @@
                                             <action selector="fbButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XoZ-0Q-6xe"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNo-IH-p8H">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNo-IH-p8H">
                                         <rect key="frame" x="312" y="7" width="136" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="136" id="G4P-0S-gC4"/>
@@ -111,7 +111,7 @@
                                     <action selector="docotorizateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8L-mJ-u9X"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huh-Rp-KA0">
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="huh-Rp-KA0">
                                 <rect key="frame" x="140" y="208" width="320" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="ZEp-n1-rPT"/>
@@ -224,7 +224,7 @@
             </objects>
             <point key="canvasLocation" x="746" y="-260"/>
         </scene>
-        <!--Detalle Doctor View Controller-->
+        <!--Data Source-->
         <scene sceneID="jaN-eB-IZc">
             <objects>
                 <viewController id="1gm-dg-obt" customClass="DetalleDoctorViewController" sceneMemberID="viewController">
@@ -236,7 +236,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo_especialidades" translatesAutoresizingMaskIntoConstraints="NO" id="BTU-T7-P3j">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo_especialidades" translatesAutoresizingMaskIntoConstraints="NO" id="BTU-T7-P3j">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b0Y-F0-Bac" userLabel="Image Pager" customClass="KIImagePager">
@@ -266,7 +266,7 @@
                                     <outlet property="delegate" destination="1gm-dg-obt" id="Yl6-sL-68G"/>
                                 </connections>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IMf-Bp-Yb4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IMf-Bp-Yb4">
                                 <rect key="frame" x="0.0" y="20" width="600" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IMf-Bp-Yb4" secondAttribute="height" multiplier="60:17" id="cax-oP-FN2"/>
@@ -278,7 +278,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dx3-Ol-thz">
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Doctor." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dx3-Ol-thz">
                                 <rect key="frame" x="16" y="55" width="488" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Dx3-Ol-thz" secondAttribute="height" multiplier="122:25" id="8ps-uG-Z2w"/>
@@ -387,7 +387,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QXc-KH-6FI">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QXc-KH-6FI">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <connections>
                                     <outlet property="delegate" destination="OKe-y3-K4r" id="iwe-6e-51J"/>
@@ -423,10 +423,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="opcionesmenu1" translatesAutoresizingMaskIntoConstraints="NO" id="TdE-Kr-jNu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="opcionesmenu1" translatesAutoresizingMaskIntoConstraints="NO" id="TdE-Kr-jNu">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué buscas?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Voy-5l-mWF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¿Qué buscas?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Voy-5l-mWF">
                                 <rect key="frame" x="0.0" y="26" width="600" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="C4o-D2-hqM"/>
@@ -437,19 +437,6 @@
                                 <color key="shadowColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="W0F-cA-IRS">
-                                <rect key="frame" x="198.5" y="197" width="202" height="101"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="101" id="pY9-qj-WGD"/>
-                                    <constraint firstAttribute="width" constant="202" id="zwq-qg-iBe"/>
-                                </constraints>
-                                <state key="normal" title=" Clínicas y Hospitales" image="boton_hospital">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="PZr-vg-hcs" kind="push" id="eUT-0q-kQe"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aE-NL-Cu6">
                                 <rect key="frame" x="196" y="89" width="209" height="98"/>
                                 <constraints>
@@ -474,6 +461,19 @@
                                 </state>
                                 <connections>
                                     <segue destination="N2Q-Zx-Erc" kind="push" id="3Jj-7c-A3s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="W0F-cA-IRS">
+                                <rect key="frame" x="161" y="199" width="278" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="pY9-qj-WGD"/>
+                                    <constraint firstAttribute="width" constant="202" id="zwq-qg-iBe"/>
+                                </constraints>
+                                <state key="normal" title=" Clínicas y     Hospitales" image="boton_hospital">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PZr-vg-hcs" kind="push" id="eUT-0q-kQe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -558,10 +558,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="especialidades" translatesAutoresizingMaskIntoConstraints="NO" id="02i-h3-rfz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="especialidades" translatesAutoresizingMaskIntoConstraints="NO" id="02i-h3-rfz">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Especialidades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h7-kE-J5p">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Especialidades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h7-kE-J5p">
                                 <rect key="frame" x="0.0" y="26" width="600" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="cdH-Vh-aIS"/>
@@ -572,7 +572,7 @@
                                 <color key="shadowColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42v-Wp-8ZB">
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42v-Wp-8ZB">
                                 <rect key="frame" x="0.0" y="113" width="600" height="162"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Xck-xB-2ce" id="jXt-G6-ZDr"/>
@@ -615,10 +615,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo_especialidades" translatesAutoresizingMaskIntoConstraints="NO" id="22r-pb-Uj3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo_especialidades" translatesAutoresizingMaskIntoConstraints="NO" id="22r-pb-Uj3">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascota_gastro" translatesAutoresizingMaskIntoConstraints="NO" id="HCb-Xh-qkY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mascota_gastro" translatesAutoresizingMaskIntoConstraints="NO" id="HCb-Xh-qkY">
                                 <rect key="frame" x="0.0" y="71" width="137" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="Le4-gq-Jri"/>
@@ -628,7 +628,7 @@
                                     <rect key="frame" x="0.0" y="71" width="137" height="15"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Especialidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD4-1o-naG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Especialidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD4-1o-naG">
                                 <rect key="frame" x="0.0" y="26" width="600" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="eVH-cm-UVp"/>
@@ -642,7 +642,7 @@
                                     <rect key="frame" x="0.0" y="26" width="400" height="37"/>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CYe-6T-HZF">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CYe-6T-HZF">
                                 <rect key="frame" x="21" y="204" width="558" height="90"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -656,9 +656,10 @@
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mycell" rowHeight="84" id="LWy-iP-EbE">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="600" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LWy-iP-EbE" id="KoF-Bs-yqt">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doctor" translatesAutoresizingMaskIntoConstraints="NO" id="SE7-Co-bHx">
@@ -860,17 +861,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo_especialidades" translatesAutoresizingMaskIntoConstraints="NO" id="Rhf-BJ-w4n">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo_especialidades" translatesAutoresizingMaskIntoConstraints="NO" id="Rhf-BJ-w4n">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="URb-9m-u9s">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="URb-9m-u9s">
                                 <rect key="frame" x="21" y="206" width="558" height="64"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <string key="text">El pediatra es el médico especializado encargado del monitoreo y estudio del niño sano y de ofrecer atención medica al paciente enfermo. El pediatra abarca las edades de 0 (recién nacido) a los 18 años.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascota_cardio" translatesAutoresizingMaskIntoConstraints="NO" id="QwO-l6-u4C">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mascota_cardio" translatesAutoresizingMaskIntoConstraints="NO" id="QwO-l6-u4C">
                                 <rect key="frame" x="0.0" y="73" width="137" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="137" id="1VG-1s-CgH"/>
@@ -880,7 +881,7 @@
                                     <rect key="frame" x="0.0" y="36" width="137" height="26"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pediatra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mW1-0o-dwz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pediatra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mW1-0o-dwz">
                                 <rect key="frame" x="0.0" y="28" width="600" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="0h9-Uy-f7O"/>
@@ -911,7 +912,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="menuCell" id="OYI-wT-UZq">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="152.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="152.5"/>
@@ -1092,16 +1093,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo_especialidades" translatesAutoresizingMaskIntoConstraints="NO" id="Fyy-za-pS1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fondo_especialidades" translatesAutoresizingMaskIntoConstraints="NO" id="Fyy-za-pS1">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_alergologo" translatesAutoresizingMaskIntoConstraints="NO" id="bXQ-Xa-0oz">
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="header_alergologo" translatesAutoresizingMaskIntoConstraints="NO" id="bXQ-Xa-0oz">
                                 <rect key="frame" x="0.0" y="20" width="600" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bXQ-Xa-0oz" secondAttribute="height" multiplier="60:17" id="iWg-8G-Pc4"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="R3n-TT-o1n">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="R3n-TT-o1n">
                                 <rect key="frame" x="16" y="190" width="568" height="70"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -1115,12 +1116,13 @@
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mycell" rowHeight="84" id="OOP-W2-y1l">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="600" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OOP-W2-y1l" id="ijV-5N-RAk">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6135F4FF-D84D-4AE3-AC22-0BC59528411A" translatesAutoresizingMaskIntoConstraints="NO" id="97z-Nc-2t4">
+                                                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="488CF8C3-9C66-40A6-9D4C-666C92C40FAA" translatesAutoresizingMaskIntoConstraints="NO" id="97z-Nc-2t4">
                                                     <rect key="frame" x="0.0" y="12" width="59" height="59"/>
                                                     <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                                         <rect key="frame" x="33" y="12" width="59" height="59"/>
@@ -1273,7 +1275,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="6135F4FF-D84D-4AE3-AC22-0BC59528411A" width="75" height="75">
+        <image name="488CF8C3-9C66-40A6-9D4C-666C92C40FAA" width="75" height="75">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
