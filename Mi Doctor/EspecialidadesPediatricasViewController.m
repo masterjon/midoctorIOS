@@ -45,7 +45,7 @@
                                     @"images":@[@"JoseCarlosBalmaceda-Slide1"],
                                     @"phone":@"9988844005",
                                     @"email":@"jocabalo45@hotmail.com",
-                                    @"map_coord":@"21.135900006139135,-86.82763299999999",
+                                    @"map_coord":@"21.136277,-86.8277236",
                                     @"address":@"Av. Tulum Lote 1 mza 1 consultorio 322 Sm 12\nHospital Galenia. cancún Quintana Roo CP 77505",
                                     @"services":@""
                                     },
@@ -53,7 +53,7 @@
                                     @"name":@"Dr. Raúl Medina Chávez",
                                     @"speciality":@"Pediatra",
                                     @"logo":@"doctor",
-                                    @"images":@[@"Raul-Medina-Slide1"],
+                                    @"images":@[@"Raul-Medina-Slide1",@"Raul-Medina-Slide2"],
                                     @"phone":@"9988482946",
                                     @"email":@"raulmedina1956@hotmail.com",
                                     @"map_coord":@"21.149954,-86.848554",
@@ -72,6 +72,28 @@
                                     @"services":@"",
                                     @"website":@"www.pasitos.mx"
                                     },
+                                @{
+                                    @"name":@"Dr. Arturo Gonzalez Pool",
+                                    @"speciality":@"Pediatra",
+                                    @"logo":@"doctor",
+                                    @"images":@[@"doctor_bg"],
+                                    @"phone":@"(998)8980820",
+                                    @"email":@"aglezpool@prodigy.net.mx",
+                                    @"map_coord":@"21.1438692,-86.8292467",
+                                    @"address":@"Av. Nichupte 22  Pabellón Caribe",
+                                    @"services":@""
+                                    },
+                                @{
+                                    @"name":@"Dr. Juan Carlos Carrera",
+                                    @"speciality":@"Pediatra",
+                                    @"logo":@"doctor",
+                                    @"images":@[@"doctor_bg"],
+                                    @"phone":@"(998)802-25-78",
+                                    @"email":@"doctor_carrera@yahoo.com.mx",
+                                    @"map_coord":@"21.136277,-86.8277236",
+                                    @"address":@"Hospital Galenia",
+                                    @"services":@""
+                                    },
                                 ]
                         },
                       @{
@@ -85,10 +107,10 @@
                                     @"name":@"Dr. Francisco Navarrete Suárez",
                                     @"speciality":@"Alergólogo",
                                     @"logo":@"logo_navarrete",
-                                    @"images":@[@"FranciscoN-Slide1",@"FranciscoN-Slide2",@"FranciscoN-Slide3",@"FranciscoN-Slide4"],
+                                    @"images":@[@"FranciscoN-Slide1",@"FranciscoN-Slide2",@"FranciscoN-Slide3",@"FranciscoN-Slide4",@"FranciscoN-Slide5"],
                                     @"phone":@"9988981927",
                                     @"email":@"alergiadecancun@yahoo.com.mx",
-                                    @"map_coord":@"21.13655,-86.827488",
+                                    @"map_coord":@"21.136277,-86.8277236",
                                     @"address":@"Av. Tulum Lote 1 mza 1 consultorio 203  SM 12 Hospital Galenia. CP 77505",
                                     @"services":@"Servicios: Pacientes con alergias, pruebas de alergia, espirometrias, vacunas para alergia y vacunas complementarias de la cartilla de vacunacion."
                                     },
@@ -99,13 +121,36 @@
                                     @"images":@[@"AuroraMeza-Slide1",@"AuroraMeza-Slide2",@"AuroraMeza-Slide3"],
                                     @"phone":@"9988981927",
                                     @"email":@"alergiaypediatria@yahoo.com.mx",
-                                    @"map_coord":@"21.13655,-86.827488",
+                                    @"map_coord":@"21.136277,-86.8277236",
                                     @"address":@"Av. Tulum lote 1 mza 1 consultorio 203 SM 12  Hospital Galenia. CP 77505",
                                     @"services":@""
                                     },
 
                                 ]
                         },
+                      @{
+                        @"title":@"Endocrinólogo",
+                        @"image":@"boton_endocrinologo",
+                        @"description":@"Es el médico especializado en las enfermedades hormonales, del metabolismo y de los problemas alimenticios o de nutrición. Enfermedades que trata: diabetes, obesidad.",
+                        @"speciality":@"Pediatra",
+                        @"label":@"Conoce a nuestros endocrinólogos:",
+                        @"doctors":@[
+                                @{
+                                    @"name":@"Dr. Hector  Raul  Rivero Escalante",
+                                    @"speciality":@"Endocrinólogo",
+                                    @"logo":@"doctor",
+                                    @"images":@[@"doctor_bg"],
+                                    @"phone":@"(998) 898 13 94",
+                                    @"email":@"hrriveroe@hotmail.com",
+                                    @"map_coord":@"21.1438692,-86.8292467",
+                                    @"address":@"Av. Nichupte 22  Pabellón Caribe",
+                                    
+                                    },
+                                
+                                
+                                ]
+                        },
+
                       @{
                         @"title":@"Neonatólogo",
                         @"image":@"boton_neonatologo",
@@ -151,7 +196,7 @@
                                     @"images":@[@"MauricoPena-Slide1"],
                                     @"phone":@"9988021582",
                                     @"email":@"pena@teleton-qroo.org.mx",
-                                    @"map_coord":@"21.1435915,-86.8290708",
+                                    @"map_coord":@"21.1438692,-86.8292467",
                                     @"address":@"Av. Nichupte 22  Pabellón Caribe  Local 10 grupo médico integral",
                                     @"services":@""
                                     },
@@ -171,7 +216,7 @@
                                     @"images":@[@"OmarRojas-Slide1",@"OmarRojas-Slide2"],
                                     @"phone":@"9988981927",
                                     @"email":@"dr_rojas_@hotmail.com",
-                                    @"map_coord":@"21.13655,-86.827488",
+                                    @"map_coord":@"21.136277,-86.8277236",
                                     @"address":@"Av. Tulum Lote 1 mza 1 consultorio 203  SM 12  Hospital Galenia. CP 77505",
                                     @"services":@""
                                     },

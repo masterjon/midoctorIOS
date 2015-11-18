@@ -38,10 +38,10 @@
                                     @"name":@"Dr. Francisco Navarrete Suárez",
                                     @"speciality":@"Alergólogo",
                                     @"logo":@"logo_navarrete",
-                                    @"images":@[@"FranciscoN-Slide1",@"FranciscoN-Slide2",@"FranciscoN-Slide3",@"FranciscoN-Slide4"],
+                                    @"images":@[@"FranciscoN-Slide1",@"FranciscoN-Slide2",@"FranciscoN-Slide3",@"FranciscoN-Slide4",@"FranciscoN-Slide5"],
                                     @"phone":@"9988981927",
                                     @"email":@"alergiadecancun@yahoo.com.mx",
-                                    @"map_coord":@"21.13655,-86.827488",
+                                    @"map_coord":@"21.136277,-86.8277236",
                                     @"address":@"Av. Tulum Lote 1 mza 1 consultorio 203  SM 12 Hospital Galenia. CP 77505",
                                     @"services":@"Servicios: Pacientes con alergias, pruebas de alergia, espirometrias, vacunas para alergia y vacunas complementarias de la cartilla de vacunacion."
                                 },
@@ -53,7 +53,7 @@
                                     
                                     @"phone":@"9988981927",
                                     @"email":@"alergiaypediatria@yahoo.com.mx",
-                                    @"map_coord":@"21.13655,-86.827488",
+                                    @"map_coord":@"21.136277,-86.8277236",
                                     @"address":@"Av. Tulum lote 1 mza 1 consultorio 203 SM 12  Hospital Galenia. CP 77505",
                                     @"services":@""
                                 },
@@ -82,6 +82,20 @@
                         @"image":@"mascota_dermatologo",
                         @"description":@"Es el médico especializado en los padecimientos de la piel, ofrece diagnóstico, prevención y tratamiento.\n Enfermedades que trata:  acné, dermatitis, comezón.",
                         @"label":@"",
+                        @"doctors":@[
+                            @{
+                                    @"name":@"Dra. Araceli de la Torre Plasencia",
+                                    @"speciality":@"Pediatra",
+                                    @"logo":@"doctora",
+                                    @"images":@[@"doctora_bg"],
+                                    @"phone":@"(998)898 26 47",
+                                    @"email":@"lucet2009@hotmail.com",
+                                    @"map_coord":@"21.1438692,-86.8292467",
+                                    @"address":@"Av. Nichupte 22  Pabellón Caribe",
+                                    @"services":@""
+                            },
+                        
+                        ]
                       },
                       @{
                         @"title":@"Endocrinólogo",
@@ -102,12 +116,23 @@
                                     @"images":@[@"BarraganParrao-Slide1",@"barragan_slide2"],
                                     @"phone":@"9988980801",
                                     @"email":@"raulbapa@hotmail.com",
-                                    @"map_coord":@"21.13655,-86.827488",
+                                    @"map_coord":@"21.136277,-86.8277236",
                                     @"address":@"Av Tulum Lote 1 mza 1  consultorio  315      SM 12 Hospital Galenia CP. 77505",
                                     @"services":@"",
                                     @"website":@"www.gastroenterologiacancun.com"
-                                    }
-                                ]
+                                },
+                                @{
+                                    @"name":@"Dr. Jorge Treviño",
+                                    @"speciality":@"Pediatra",
+                                    @"logo":@"doctor",
+                                    @"images":@[@"doctora_bg"],
+                                    @"phone":@"(998)267 74 04",
+                                    @"email":@"antiobesity@hotmail.com",
+                                    @"map_coord":@"21.136277,-86.8277236",
+                                    @"address":@"Av. Tulum Lote 1 mza 1 SM 12 Hospital Galenia",
+                                    @"services":@""
+                                },
+                            ]
                       },
                       @{
                         @"title":@"Ginecólogo",
@@ -182,7 +207,23 @@
                         @"image":@"mascota_ortopedista",
                         @"description":@"Es el médico especializado en la prevención y tratamiento de las afecciones o traumas de huesos y músculos. Enfermedades que trata:  fracturas, artritis, tendosinovitis estenosante, distensión muscular.",
                         @"label":@"",
-                      },
+                        @"doctors":@[
+                                @{
+                                    @"name":@"Armando Mantecón",
+                                    @"speciality":@"Gastroenterólogo",
+                                    @"logo":@"logo_mantecon",
+                                    @"images":@[@"Armando-Mantecon-1",@"Armando-Mantecon-2",@"Armando-Mantecon-3"],
+                                    @"phone":@"(998) 884 94 68",
+                                    @"email":@"doctor@armandomantecon.com",
+                                    
+                                    @"map_coord":@"21.1446722,-86.8246716",
+                                    @"address":@"Hospital Amerimed Cancun",
+                                    @"services":@"",
+                                    @"website":@"www.armandomantecon.com"
+                                    }
+                                ]
+                        },
+
                       @{
                         @"title":@"Otorrinolaringólogo",
                         @"image":@"mascota_otorrino",

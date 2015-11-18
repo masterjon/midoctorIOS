@@ -16,6 +16,10 @@
 		FC3EC5741AF717F20000CDC5 /* KIImagePager in Resources */ = {isa = PBXBuildFile; fileRef = FC3EC5731AF717F20000CDC5 /* KIImagePager */; };
 		FC3EC5771AF7182A0000CDC5 /* KIImagePager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC5761AF7182A0000CDC5 /* KIImagePager.m */; };
 		FC55177F1AEDB948001E1A7C /* DetalleEspecialidadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55177E1AEDB948001E1A7C /* DetalleEspecialidadViewController.m */; };
+		FC992EA21BEFD0F30098B58F /* ClinicasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC992EA11BEFD0F30098B58F /* ClinicasViewController.m */; };
+		FC992EA51BEFFB6F0098B58F /* DetalleClinicasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC992EA41BEFFB6F0098B58F /* DetalleClinicasViewController.m */; };
+		FC992EAB1BF00F160098B58F /* LaboratoriosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC992EAA1BF00F160098B58F /* LaboratoriosViewController.m */; };
+		FC992EAE1BF00F2A0098B58F /* DetalleLaboratoriosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC992EAD1BF00F2A0098B58F /* DetalleLaboratoriosViewController.m */; };
 		FCD03CD11AF0931400B24346 /* DetalleDoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD03CD01AF0931400B24346 /* DetalleDoctorViewController.m */; };
 		FCE610351ADB7BC300F1E707 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE610341ADB7BC300F1E707 /* main.m */; };
 		FCE610381ADB7BC300F1E707 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE610371ADB7BC300F1E707 /* AppDelegate.m */; };
@@ -51,6 +55,14 @@
 		FC3EC5761AF7182A0000CDC5 /* KIImagePager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KIImagePager.m; path = KIImagePager/KIImagePager.m; sourceTree = "<group>"; };
 		FC55177D1AEDB948001E1A7C /* DetalleEspecialidadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleEspecialidadViewController.h; sourceTree = "<group>"; };
 		FC55177E1AEDB948001E1A7C /* DetalleEspecialidadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleEspecialidadViewController.m; sourceTree = "<group>"; };
+		FC992EA01BEFD0F30098B58F /* ClinicasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClinicasViewController.h; sourceTree = "<group>"; };
+		FC992EA11BEFD0F30098B58F /* ClinicasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClinicasViewController.m; sourceTree = "<group>"; };
+		FC992EA31BEFFB6F0098B58F /* DetalleClinicasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleClinicasViewController.h; sourceTree = "<group>"; };
+		FC992EA41BEFFB6F0098B58F /* DetalleClinicasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleClinicasViewController.m; sourceTree = "<group>"; };
+		FC992EA91BF00F160098B58F /* LaboratoriosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaboratoriosViewController.h; sourceTree = "<group>"; };
+		FC992EAA1BF00F160098B58F /* LaboratoriosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaboratoriosViewController.m; sourceTree = "<group>"; };
+		FC992EAC1BF00F2A0098B58F /* DetalleLaboratoriosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleLaboratoriosViewController.h; sourceTree = "<group>"; };
+		FC992EAD1BF00F2A0098B58F /* DetalleLaboratoriosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleLaboratoriosViewController.m; sourceTree = "<group>"; };
 		FCD03CCF1AF0931400B24346 /* DetalleDoctorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleDoctorViewController.h; sourceTree = "<group>"; };
 		FCD03CD01AF0931400B24346 /* DetalleDoctorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleDoctorViewController.m; sourceTree = "<group>"; };
 		FCE6102F1ADB7BC300F1E707 /* Tu Doctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tu Doctor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +146,14 @@
 				FC3EC56E1AF57D0B0000CDC5 /* EspecialidadesPediatricasViewController.m */,
 				FC3EC5701AF59B890000CDC5 /* DetalleEspecialidadPediatricaViewController.h */,
 				FC3EC5711AF59B8A0000CDC5 /* DetalleEspecialidadPediatricaViewController.m */,
+				FC992EA01BEFD0F30098B58F /* ClinicasViewController.h */,
+				FC992EA11BEFD0F30098B58F /* ClinicasViewController.m */,
+				FC992EA31BEFFB6F0098B58F /* DetalleClinicasViewController.h */,
+				FC992EA41BEFFB6F0098B58F /* DetalleClinicasViewController.m */,
+				FC992EA91BF00F160098B58F /* LaboratoriosViewController.h */,
+				FC992EAA1BF00F160098B58F /* LaboratoriosViewController.m */,
+				FC992EAC1BF00F2A0098B58F /* DetalleLaboratoriosViewController.h */,
+				FC992EAD1BF00F2A0098B58F /* DetalleLaboratoriosViewController.m */,
 			);
 			path = "Mi Doctor";
 			sourceTree = "<group>";
@@ -274,14 +294,18 @@
 			files = (
 				FCE6105A1ADCD21D00F1E707 /* EspecialidadesViewController.m in Sources */,
 				FCD03CD11AF0931400B24346 /* DetalleDoctorViewController.m in Sources */,
+				FC992EA51BEFFB6F0098B58F /* DetalleClinicasViewController.m in Sources */,
 				FC3EC5721AF59B8A0000CDC5 /* DetalleEspecialidadPediatricaViewController.m in Sources */,
 				FCE6103B1ADB7BC300F1E707 /* ViewController.m in Sources */,
 				FCE610381ADB7BC300F1E707 /* AppDelegate.m in Sources */,
 				FC3EC5771AF7182A0000CDC5 /* KIImagePager.m in Sources */,
+				FC992EAE1BF00F2A0098B58F /* DetalleLaboratoriosViewController.m in Sources */,
 				FC3EC56F1AF57D0B0000CDC5 /* EspecialidadesPediatricasViewController.m in Sources */,
 				FC55177F1AEDB948001E1A7C /* DetalleEspecialidadViewController.m in Sources */,
 				FCE610351ADB7BC300F1E707 /* main.m in Sources */,
+				FC992EAB1BF00F160098B58F /* LaboratoriosViewController.m in Sources */,
 				FC3EC56A1AF571330000CDC5 /* MapViewController.m in Sources */,
+				FC992EA21BEFD0F30098B58F /* ClinicasViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
